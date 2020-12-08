@@ -1,0 +1,124 @@
+/*===============================
+=            Choices            =
+===============================*/
+.choices {
+	position: relative;
+	z-index: 1;
+	border-radius: 6px;
+	height: 39px;
+	overflow: hidden;
+}
+
+.choices:focus {
+	outline: none;
+}
+
+.choices[data-focus-visible-added] {
+	outline: 2px solid #7943A4;
+}
+
+
+.choices.is-open {
+	overflow: initial;
+}
+
+.choices.is-open {
+	overflow: initial;
+}
+
+.choices [hidden] {
+  display: none !important;
+}
+
+.choices[data-type*='select-one'] {
+	cursor: pointer;
+}
+
+.choices[data-type*='select-one']:after {
+	content: '';
+	z-index: 21;
+  height: 13px;
+  width: 13px;
+	background: url("../img/select-off.svg") no-repeat 50% 50%;
+  position: absolute;
+  right: 14.5px;
+  top: 50%;
+  margin-top: -7.5px;
+  pointer-events: none;
+}
+
+.choices[data-type*='select-one'].is-open:after {
+	background: url("../img/select-on.svg") no-repeat 50% 50%;
+  margin-top: -5.5px;
+}
+
+.choices__inner {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  padding: 6px 10px 3.75px;
+	height: 100%;
+	font-weight: normal;
+	border: 1px solid #fff;
+	border-radius: inherit;
+	background-color: transparent;
+	overflow: hidden;
+}
+
+.choices__list--single {
+  display: inline-block;
+  padding: 4px 16px 4px 4px;
+	width: 100%;
+}
+
+.choices__list--dropdown {
+  visibility: hidden;
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #999;
+	top: 100%;
+	border-radius: 6px;
+  overflow: hidden;
+  word-break: break-all;
+  will-change: visibility;
+}
+
+.choices__list--dropdown.is-active {
+	visibility: visible;
+}
+
+.is-open .choices__list--dropdown {
+	color: #999999;
+  border-color: #999999;
+}
+
+.choices__list--dropdown .choices__item {
+  position: relative;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.choices__list--dropdown .choices__item:not(:last-child) {
+  border-bottom: 1px solid currentColor;
+}
+
+.choices__list--dropdown .choices__item--selectable.is-highlighted {
+  background-color: rgba(194, 131, 243, 0.4);
+}
+
+.is-open .choices__inner {
+	border-radius: 6px;
+	border-color: currentColor;
+}
+
+.is-flipped.is-open .choices__inner {
+  border-radius: inherit;
+}
+
+div[id$="item-choice-1"] {
+	display: none;
+}
+
+/* =====  End of Choices  ====== */

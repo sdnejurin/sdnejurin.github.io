@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Blanchard - художественная галерея</title>
+		<link rel="stylesheet" href="css/simplebar.css">
+		<link rel="stylesheet" href="css/swiper-bundle.css">
+		<link rel="stylesheet" href="css/choices.css">
+		<link rel="stylesheet" href="css/main.css">
+		<script defer src="js/simplebar.min.js"></script>
+		<script defer src="js/focus-visible.js"></script>
+		<script defer src="js/popup.js"></script>
+		<script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script defer src="js/swiper.js"></script>
+		<script defer src="js/choices.min.js"></script>
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__top header-top">
+				<div class="header__container container">
+					<h1 class="visually-hidden">Blanchard - художественная галерея</h1>
+
+					<div class="header-top__logo logo">
+						<svg>
+							<use xlink:href="img/sprite.svg#logo"></use>
+						</svg>
+					</div>
+
+					<nav class="header__nav nav-top">
+						<ul class="nav-top__list">
+							<li class="nav-top__item">
+								<a href="#" class="nav-top__link">О нас</a>
+							</li>
+							<li class="nav-top__item">
+								<a href="#" class="nav-top__link">Галерея</a>
+							</li>
+							<li class="nav-top__item">
+								<a href="#" class="nav-top__link">Каталог</a>
+							</li>
+							<li class="nav-top__item">
+								<a href="#" class="nav-top__link">События</a>
+							</li>
+							<li class="nav-top__item">
+								<a href="#" class="nav-top__link">Издания</a>
+							</li>
+							<li class="nav-top__item">
+								<a href="#" class="nav-top__link">Проекты</a>
+							</li>
+							<li class="nav-top__item">
+								<a href="#" class="nav-top__link">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+
+					<button class="login-btn btn--reset">Войти
+						<svg class="login-btn__svg">
+							<use xlink:href="img/sprite.svg#login"></use>
+						</svg>
+					</button>
+				</div>
+			</div>
+
+			<div class="header__bottom header-bottom">
+				<div class="header-bottom__container container">
+					<nav class="header__nav nav-bottom">
+						<ul class="nav-bottom__list">
+							<li class="nav-bottom__item">
+								<a href="#" class="nav-bottom__link">Реализм
+									<svg class="nav-bottom__svg">
+										<use xlink:href="img/sprite.svg#rectangle"></use>
+									</svg>
+								</a>
+
+								<div class="popup" data-simplebar>
+									<ul class="popup__list realism">
+										<li class="popup__item realism--first">
+											<a href="#" class="popup__link">Тинторетто</a>
+										</li>
+										<li class="popup__item realism--second">
+											<a href="#" class="popup__link">Фридрих</a>
+										</li>
+										<li class="popup__item realism--third">
+											<a href="#" class="popup__link">Леонардо</a>
+										</li>
+										<li class="popup__item realism--fourth">
+											<a href="#" class="popup__link">Верроккьо</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="nav-bottom__item">
+								<a href="#" class="nav-bottom__link">Импрессионизм
+									<svg class="nav-bottom__svg">
+										<use xlink:href="img/sprite.svg#rectangle"></use>
+									</svg>
+								</a>
+
+								<div class="popup" data-simplebar>
+									<ul class="popup__list impressionism">
+										<li class="popup__item impressionism--first">
+											<a href="#" class="popup__link">Моне</a>
+										</li>
+										<li class="popup__item impressionism--second">
+											<a href="#" class="popup__link">Сислей</a>
+										</li>
+										<li class="popup__item impressionism--third">
+											<a href="#" class="popup__link">Мане</a>
+										</li>
+										<li class="popup__item impressionism--fourth">
+											<a href="#" class="popup__link">Ренуар</a>
+										</li>
+										<li class="popup__item impressionism--fifth">
+											<a href="#" class="popup__link">Моне</a>
+										</li>
+										<li class="popup__item impressionism--sixth">
+											<a href="#" class="popup__link">Сислей</a>
+										</li>
+										<li class="popup__item impressionism--seventh">
+											<a href="#" class="popup__link">Мане</a>
+										</li>
+										<li class="popup__item impressionism--eighth">
+											<a href="#" class="popup__link">Ренуар</a>
+										</li>
+										<li class="popup__item impressionism--ninth">
+											<a href="#" class="popup__link">Моне</a>
+										</li>
+										<li class="popup__item impressionism--tenth">
+											<a href="#" class="popup__link">Сислей</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="nav-bottom__item">
+								<a href="#" class="nav-bottom__link">Постимпрессионизм
+									<svg class="nav-bottom__svg">
+										<use xlink:href="img/sprite.svg#rectangle"></use>
+									</svg>
+								</a>
+
+								<div class="popup" data-simplebar>
+									<ul class="popup__list postimpressionism">
+										<li class="popup__item postimpressionism--first">
+											<a href="#" class="popup__link">Ван Гог</a>
+										</li>
+										<li class="popup__item postimpressionism--second">
+											<a href="#" class="popup__link">Сезанн</a>
+										</li>
+										<li class="popup__item postimpressionism--third">
+											<a href="#" class="popup__link">Гоген</a>
+										</li>
+										<li class="popup__item postimpressionism--fourth">
+											<a href="#" class="popup__link">Сёра</a>
+										</li>
+										<li class="popup__item postimpressionism--fifth">
+											<a href="#" class="popup__link">Ван Гог</a>
+										</li>
+										<li class="popup__item postimpressionism--sixth">
+											<a href="#" class="popup__link">Сезанн</a>
+										</li>
+										<li class="popup__item postimpressionism--seventh">
+											<a href="#" class="popup__link">Гоген</a>
+										</li>
+										<li class="popup__item postimpressionism--eighth">
+											<a href="#" class="popup__link">Сёра</a>
+										</li>
+										<li class="popup__item postimpressionism--ninth">
+											<a href="#" class="popup__link">Ван Гог</a>
+										</li>
+										<li class="popup__item postimpressionism--tenth">
+											<a href="#" class="popup__link">Сезанн</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="nav-bottom__item">
+								<a href="#" class="nav-bottom__link">Авангард
+									<svg class="nav-bottom__svg">
+										<use xlink:href="img/sprite.svg#rectangle"></use>
+									</svg>
+								</a>
+
+								<div class="popup" data-simplebar>
+									<ul class="popup__list vanguard">
+										<li class="popup__item vanguard--first">
+											<a href="#" class="popup__link">Кандинский</a>
+										</li>
+										<li class="popup__item vanguard--second">
+											<a href="#" class="popup__link">Маринетти</a>
+										</li>
+										<li class="popup__item vanguard--third">
+											<a href="#" class="popup__link">Малевич</a>
+										</li>
+										<li class="popup__item vanguard--fourth">
+											<a href="#" class="popup__link">Пикассо</a>
+										</li>
+										<li class="popup__item vanguard--fifth">
+											<a href="#" class="popup__link">Кандинский</a>
+										</li>
+										<li class="popup__item vanguard--sixth">
+											<a href="#" class="popup__link">Маринетти</a>
+										</li>
+										<li class="popup__item vanguard--seventh">
+											<a href="#" class="popup__link">Малевич</a>
+										</li>
+										<li class="popup__item vanguard--eighth">
+											<a href="#" class="popup__link">Пикассо</a>
+										</li>
+										<li class="popup__item vanguard--ninth">
+											<a href="#" class="popup__link">Кандинский</a>
+										</li>
+										<li class="popup__item vanguard--tenth">
+											<a href="#" class="popup__link">Маринетти</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="nav-bottom__item">
+								<a href="#" class="nav-bottom__link">Футуризм
+									<svg class="nav-bottom__svg">
+										<use xlink:href="img/sprite.svg#rectangle"></use>
+									</svg>
+								</a>
+
+								<div class="popup" data-simplebar>
+									<ul class="popup__list futurism">
+										<li class="popup__item futurism--first">
+											<a href="#" class="popup__link">Карра</a>
+										</li>
+										<li class="popup__item futurism--second">
+											<a href="#" class="popup__link">Прателла</a>
+										</li>
+										<li class="popup__item futurism--third">
+											<a href="#" class="popup__link">Северини</a>
+										</li>
+										<li class="popup__item futurism--fourth">
+											<a href="#" class="popup__link">Балла</a>
+										</li>
+										<li class="popup__item futurism--fifth">
+											<a href="#" class="popup__link">Карра</a>
+										</li>
+										<li class="popup__item futurism--sixth">
+											<a href="#" class="popup__link">Прателла</a>
+										</li>
+										<li class="popup__item futurism--seventh">
+											<a href="#" class="popup__link">Северини</a>
+										</li>
+										<li class="popup__item futurism--eighth">
+											<a href="#" class="popup__link">Балла</a>
+										</li>
+										<li class="popup__item futurism--ninth">
+											<a href="#" class="popup__link">Карра</a>
+										</li>
+										<li class="popup__item futurism--tenth">
+											<a href="#" class="popup__link">Прателла</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</nav>
+
+					<form class="header-bottom__form form-bottom" tabindex="0">
+						<input class="form-bottom__input" type="search" name="search" placeholder="Поиск по сайту">
+
+						<button class="form-bottom__btn btn--reset">
+							<svg class="form-bottom__svg">
+								<use xlink:href="img/sprite.svg#search"></use>
+							</svg>
+						</button>
+					</form>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<section class="hero">
+				<div class="swiper-container-hero">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide hero__pictures">
+							<img class="hero__img" src="img/hero1.jpg" alt="Замок">
+						</div>
+						<div class="swiper-slide hero__img">
+							<img class="hero__img" src="img/hero2.jpg" alt="Замок">
+						</div>
+						<div class="swiper-slide hero__img">
+							<img class="hero__img" src="img/hero3.jpg" alt="Замок">
+						</div>
+					</div>
+				</div>
+				<div class="hero__text hero__container container">
+					<h2 class="hero__subtitle">Прикоснитесь к прекрасному</h2>
+					<p class="hero__description">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
+
+					<a href="#" class="hero__link">Подписаться на рассылку</a>
+				</div>
+
+			</section>
+
+			<section class="about-us">
+				<div class="container about-us__container">
+					<h2 class="about-us__subtitle main-subtitle">О нас</h2>
+
+					<p class="about-us__text">Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены.</p>
+				</div>
+			</section>
+
+			<section class="gallery">
+					<div class="gallery-img">
+						<img src="img/gallery.jpg" alt="Цветы">
+					</div>
+
+					<div class="container gallery__container">
+						<div class="gallery-left-column">
+							<h2 class="gallery__subtitle main-subtitle">Галерея</h2>
+
+							<form class="gallery__form gallery-form">
+								<fieldset class="gallery-form__fieldset">
+									<legend class="gallery-form__legend">Фильтровать по:</legend>
+
+									<select name="Gallery" class="gallery-form__select">
+										<option value="Author" class="gallery-form__option">Автор</option>
+										<option value="Direction" class="gallery-form__option">Направление</option>
+										<option value="Technique" class="gallery-form__option">Техника</option>
+									</select>
+								</fieldset>
+							</form>
+
+							<p class="gallery-text">Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний
+								<a href="#" class="gallery-text__link">авторизуйтесь,</a> либо воспользуйтесь лицензией.</p>
+						</div>
+
+						<div class="gallery-right-column">
+							<div class="swiper-container-gallery">
+								<div class="gallery-nav">
+									<button class="swiper-button-prev btn--reset gallery-nav__btn gallery-nav__btn--prev"></button>
+									<div class="swiper-pagination gallery-nav__pagination"></div>
+									<button class="swiper-button-next btn--reset gallery-nav__btn gallery-nav__btn--next"></button>
+								</div>
+
+								<div class="swiper-wrapper">
+									<a href="#" class="swiper-slide gallery__link">
+										<img class="gallery__img" src="img/picture1.jpg" alt="Картина">
+									</a>
+									<a href="#" class="swiper-slide gallery__link">
+										<img class="gallery__img" src="img/picture2.jpg" alt="Картина">
+									</a>
+									<a href="#" class="swiper-slide gallery__link">
+										<img class="gallery__img" src="img/picture3.jpg" alt="Картина">
+									</a>
+									<a href="#" class="swiper-slide gallery__link">
+										<img class="gallery__img" src="img/picture4.jpg" alt="Картина">
+									</a>
+									<a href="#" class="swiper-slide gallery__link">
+										<img class="gallery__img" src="img/picture5.jpg" alt="Картина">
+									</a>
+									<a href="#" class="swiper-slide gallery__link">
+										<img class="gallery__img" src="img/picture6.jpg" alt="Картина">
+									</a>
+									<a href="#" class="swiper-slide gallery__link">
+										<img class="gallery__img" src="img/picture7.jpg" alt="Картина">
+									</a>
+									<a href="#" class="swiper-slide gallery__link">
+										<img class="gallery__img" src="img/picture8.jpg" alt="Картина">
+									</a>
+									<a href="#" class="swiper-slide gallery__link">
+										<img class="gallery__img" src="img/picture9.jpg" alt="Картина">
+									</a>
+									<a href="#" class="swiper-slide gallery__link">
+										<img class="gallery__img" src="img/picture10.jpg" alt="Картина">
+									</a>
+									<a href="#" class="swiper-slide gallery__link">
+										<img class="gallery__img" src="img/picture11.jpg" alt="Картина">
+									</a>
+									<a href="#" class="swiper-slide gallery__link">
+										<img class="gallery__img" src="img/picture12.jpg" alt="Картина">
+									</a>
+									<a href="#" class="swiper-slide gallery__link">
+										<img class="gallery__img" src="img/picture13.jpg" alt="Картина">
+									</a>
+									<a href="#" class="swiper-slide gallery__link">
+										<img class="gallery__img" src="img/picture14.jpg" alt="Картина">
+									</a>
+									<a href="#" class="swiper-slide gallery__link">
+										<img class="gallery__img" src="img/picture15.jpg" alt="Картина">
+									</a>
+									<a href="#" class="swiper-slide gallery__link">
+										<img class="gallery__img" src="img/picture16.jpg" alt="Картина">
+									</a>
+									<a href="#" class="swiper-slide gallery__link">
+										<img class="gallery__img" src="img/picture17.jpg" alt="Картина">
+									</a>
+									<a href="#" class="swiper-slide gallery__link">
+										<img class="gallery__img" src="img/picture18.jpg" alt="Картина">
+									</a>
+									<a href="#" class="swiper-slide gallery__link">
+										<img class="gallery__img" src="img/picture19.jpg" alt="Картина">
+									</a>
+									<a href="#" class="swiper-slide gallery__link">
+										<img class="gallery__img" src="img/picture20.jpg" alt="Картина">
+									</a>
+									<a href="#" class="swiper-slide gallery__link">
+										<img class="gallery__img" src="img/picture21.jpg" alt="Картина">
+									</a>
+									<a href="#" class="swiper-slide gallery__link">
+										<img class="gallery__img" src="img/picture22.jpg" alt="Картина">
+									</a>
+									<a href="#" class="swiper-slide gallery__link">
+										<img class="gallery__img" src="img/picture23.jpg" alt="Картина">
+									</a>
+									<a href="#" class="swiper-slide gallery__link">
+										<img class="gallery__img" src="img/picture24.jpg" alt="Картина">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+			</section>
+		</main>
+
+		<footer></footer>
+	</body>
+</html>
