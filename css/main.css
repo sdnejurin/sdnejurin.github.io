@@ -552,11 +552,11 @@ body {
   transition: fill .3s;
 }
 
-.login__btn:hover > .login__svg {
+.login-btn:hover > .login-btn__svg {
   fill: var(--color-heliotrope);
 }
 
-.login__btn:active > .login__svg {
+.login-btn:active > .login-btn__svg {
   fill: var(--color-amethyst);
 }
 
