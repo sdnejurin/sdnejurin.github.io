@@ -26,13 +26,13 @@
 		height: 7px;
 		fill: none;
 		stroke: currentColor;
-		transition: stroke .3s, transform .3s;
+		transition: stroke var(--transition-time), transform var(--transition-time);
 	}
 
 	&__link {
 		padding-right: 15px;
 		outline: 2px solid transparent;
-		transition: color .3s, outline .3s;
+		transition: color var(--transition-time), outline var(--transition-time);
 
 		&:hover {
 			color: var(--color-amethyst);

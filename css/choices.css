@@ -39,7 +39,6 @@
 	z-index: 21;
   height: 13px;
   width: 13px;
-	background: url("../img/select-off.svg") no-repeat 50% 50%;
   position: absolute;
   right: 14.5px;
   top: 50%;
@@ -48,7 +47,6 @@
 }
 
 .choices[data-type*='select-one'].is-open:after {
-	background: url("../img/select-on.svg") no-repeat 50% 50%;
   margin-top: -5.5px;
 }
 

@@ -1,0 +1,141 @@
+.modal {
+	&__container {
+		position: absolute;
+		top: 16.2%;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		width: 900px;
+		height: 500px;
+		margin: 50px auto;
+		display: none;
+		vertical-align: middle;
+		background-color: #fff;
+		cursor: default;
+		text-align: left;
+	}
+
+	&__content {
+		display: flex;
+		height: 100%;
+	}
+
+	&__img {
+		width: 400px;
+	}
+}
+
+.modal-text {
+	display: flex;
+	flex-direction: column;
+	width: 500px;
+	height: 100%;
+	padding: 122px 48px;
+	color: var(--color-dark);
+
+	&__subtitle {
+		display: inline-block;
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 33px;
+	}
+
+	&__name {
+		display: inline-block;
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 20px;
+	}
+
+	&__date {
+		display: inline-block;
+		margin-bottom: 34px;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 16px;
+		color: #969696;
+	}
+
+	&__desc {
+		display: inline-block;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 32px;
+	}
+}
+
+.modal-btn {
+	position: absolute;
+	top: 2.2%;
+	right: 1.2%;
+	width: 33px;
+	height: 33px;
+	outline: 2px solid transparent;
+	transition: outline var(--transition-time);
+
+	&:focus-visible {
+		outline: 2px solid var(--color-purple);
+	}
+
+	&__svg {
+		width: 15px;
+		fill: var(--color-black);
+		transition: fill var(--transition-time);
+	}
+}
+
+.modal-btn:hover > .modal-btn__svg {
+	fill: var(--color-heliotrope);
+}
+
+.modal-btn:active > .modal-btn__svg {
+	fill: var(--color-amethyst);
+}
+
+.modal.is-open {
+	opacity: 1;
+	visibility: visible;
+	transition: opacity var(--transition-time), visibility var(--transition-time);
+}
+
+.modal__container.modal-open {
+	display: inline-block;
+}
+
+.fade {
+	opacity: 0;
+	transition: opacity var(--transition-time);
+}
+
+.fade.animate-open {
+	opacity: 1;
+	transition: opacity var(--transition-time);
+}
+
+.fadeInUp {
+	opacity: 0;
+	transform: translateY(-100px);
+	transition: opacity var(--transition-time), transform var(--transition-time);
+}
+
+.fadeInUp.animate-open {
+	opacity: 1;
+	transform: translateY(0);
+	transition: opacity var(--transition-time), transform var(--transition-time);
+}
+
+.content {
+	position: relative;
+}
+
+.disable-scroll {
+	overflow: hidden;
+}
+
+.gallery-right-column {
+	z-index: 1;
+}
+
+.swiper-container-gallery {
+	z-index: 2;
+}
