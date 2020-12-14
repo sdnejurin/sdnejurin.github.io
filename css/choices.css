@@ -73,18 +73,22 @@
   visibility: hidden;
   z-index: -1;
   position: absolute;
-  width: 100%;
+	width: 100%;
+	opacity: 0;
   background-color: transparent;
   border: 1px solid #999;
 	top: 100%;
 	border-radius: 6px;
   overflow: hidden;
   word-break: break-all;
-  will-change: visibility;
+	will-change: visibility;
+	transition: opacity .3s, visibility .3s;
 }
 
 .choices__list--dropdown.is-active {
 	visibility: visible;
+	opacity: 1;
+	transition: opacity .3s, visibility .3s;
 }
 
 .is-open .choices__list--dropdown {
@@ -115,8 +119,8 @@
   border-radius: inherit;
 }
 
-div[id$="item-choice-1"] {
+/* div[id$="item-choice-1"] {
 	display: none;
-}
+} */
 
 /* =====  End of Choices  ====== */

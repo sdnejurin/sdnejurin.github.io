@@ -17,9 +17,12 @@
 		margin-bottom: 15px;
 	}
 
-	&__link {
+	&__picture {
 		display: inline-block;
 		position: relative;
+		outline: 2px solid transparent;
+		cursor: pointer;
+		transition: outline-color var(--transition-time);
 
 		&::before {
 			content: "";
@@ -57,6 +60,10 @@
 				opacity: 1;
 			}
 		}
+
+		&:focus-visible {
+			outline-color: var(--color-purple);
+		}
 	}
 }
 
@@ -93,7 +100,7 @@
 }
 
 .gallery-right-column {
-	width: 1150px;
+	width: 1154px;
 	padding-top: 22px;
 }
 
@@ -158,6 +165,11 @@
 
 .gallery-nav .focus-visible {
 	outline: 2px solid var(--color-purple);
+}
+
+.swiper-container-gallery {
+	padding-left: 2px;
+	padding-right: 2px;
 }
 
 .swiper-pagination {
