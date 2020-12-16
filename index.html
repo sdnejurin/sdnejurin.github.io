@@ -312,15 +312,15 @@
 						<h2 class="gallery__subtitle main-subtitle">Галерея</h2>
 
 						<form class="gallery__form gallery-form">
-							<fieldset class="gallery-form__fieldset">
-								<legend class="gallery-form__legend">Фильтровать по:</legend>
+							<label class="gallery-form__label">
+								<span class="gallery-form__text">Фильтровать по:</span>
 
 								<select name="Gallery" class="gallery-form__select">
 									<option value="Author" class="gallery-form__option">Автор</option>
 									<option value="Direction" class="gallery-form__option">Направление</option>
 									<option value="Technique" class="gallery-form__option">Техника</option>
 								</select>
-							</fieldset>
+							</label>
 						</form>
 
 						<p class="gallery__text gallery-text">Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний
@@ -336,78 +336,174 @@
 								<button class="swiper-button-next btn--reset gallery-nav__btn gallery-nav__btn--next"></button>
 							</div>
 
-							<div class="swiper-wrapper content">
-								<div class="swiper-slide gallery__picture" data-path="1" data-animation="fade" data-speed="300" tabindex="0">
-									<img class="gallery__img" src="img/picture1.jpg" alt="Картина">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide gallery__slide">
+									<div class="gallery__picture" data-path="1" data-animation="fade" data-speed="300" data-painter="Казимир Малевич" data-name-picture="“Женщина с граблями”" data-date="1931-1932" tabindex="0">
+										<img class="gallery__img" src="img/picture1.jpg" alt="Картина">
+
+										<p class="gallery__description">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+									</div>
 								</div>
-								<div class="swiper-slide gallery__picture" data-path="2" data-animation="fade" data-speed="300" tabindex="0">
-									<img class="gallery__img" src="img/picture2.jpg" alt="Картина">
+								<div class="swiper-slide gallery__slide">
+									<div class="gallery__picture" data-path="2" data-animation="fade" data-speed="300" data-painter="Lorem, ipsum." data-name-picture="“Lorem, ipsum dolor.”" data-date="1900-1901" tabindex="0">
+										<img class="gallery__img" src="img/picture2.jpg" alt="Картина">
+
+										<p class="gallery__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis numquam illum tempora debitis voluptatem ipsum autem, nulla veniam sequi, quidem ratione exercitationem dolorem hic error adipisci tenetur minima rem ab!</p>
+									</div>
 								</div>
-								<div class="swiper-slide gallery__picture" data-path="3" data-animation="fade" data-speed="300" tabindex="0">
-									<img class="gallery__img" src="img/picture3.jpg" alt="Картина">
+								<div class="swiper-slide gallery__slide">
+									<div class="gallery__picture" data-path="3" data-animation="fade" data-speed="300" data-painter="Казимир Малевич" data-name-picture="“Женщина с граблями”" data-date="1931-1932" tabindex="0">
+										<img class="gallery__img" src="img/picture3.jpg" alt="Картина">
+
+										<p class="gallery__description">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+									</div>
 								</div>
-								<div class="swiper-slide gallery__picture" data-path="4" data-animation="fade" data-speed="300" tabindex="0">
-									<img class="gallery__img" src="img/picture4.jpg" alt="Картина">
+								<div class="swiper-slide gallery__slide">
+									<div class="gallery__picture" data-path="4" data-animation="fade" data-speed="300" data-painter="Казимир Малевич" data-name-picture="“Женщина с граблями”" data-date="1931-1932" tabindex="0">
+										<img class="gallery__img" src="img/picture4.jpg" alt="Картина">
+
+										<p class="gallery__description">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+									</div>
 								</div>
-								<div class="swiper-slide gallery__picture" data-path="5" data-animation="fade" data-speed="300" tabindex="0">
-									<img class="gallery__img" src="img/picture5.jpg" alt="Картина">
+								<div class="swiper-slide gallery__slide">
+									<div class="gallery__picture" data-path="5" data-animation="fade" data-speed="300" data-painter="Казимир Малевич" data-name-picture="“Женщина с граблями”" data-date="1931-1932" tabindex="0">
+										<img class="gallery__img" src="img/picture5.jpg" alt="Картина">
+
+										<p class="gallery__description">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+									</div>
 								</div>
-								<div class="swiper-slide gallery__picture" data-path="6" data-animation="fade" data-speed="300" tabindex="0">
-									<img class="gallery__img" src="img/picture6.jpg" alt="Картина">
+								<div class="swiper-slide gallery__slide">
+									<div class="gallery__picture" data-path="6" data-animation="fade" data-speed="300" data-painter="Казимир Малевич" data-name-picture="“Женщина с граблями”" data-date="1931-1932" tabindex="0">
+										<img class="gallery__img" src="img/picture6.jpg" alt="Картина">
+
+										<p class="gallery__description">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+									</div>
 								</div>
-								<div class="swiper-slide gallery__picture" data-path="7" data-animation="fade" data-speed="300" tabindex="0">
-									<img class="gallery__img" src="img/picture7.jpg" alt="Картина">
+								<div class="swiper-slide gallery__slide">
+									<div class="gallery__picture" data-path="7" data-animation="fade" data-speed="300" data-painter="Казимир Малевич" data-name-picture="“Женщина с граблями”" data-date="1931-1932" tabindex="0">
+										<img class="gallery__img" src="img/picture7.jpg" alt="Картина">
+
+										<p class="gallery__description">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+									</div>
 								</div>
-								<div class="swiper-slide gallery__picture" data-path="8" data-animation="fade" data-speed="300" tabindex="0">
-									<img class="gallery__img" src="img/picture8.jpg" alt="Картина">
+								<div class="swiper-slide gallery__slide">
+									<div class="gallery__picture" data-path="8" data-animation="fade" data-speed="300" data-painter="Казимир Малевич" data-name-picture="“Женщина с граблями”" data-date="1931-1932" tabindex="0">
+										<img class="gallery__img" src="img/picture8.jpg" alt="Картина">
+
+										<p class="gallery__description">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+									</div>
 								</div>
-								<div class="swiper-slide gallery__picture" data-path="9" data-animation="fade" data-speed="300" tabindex="0">
-									<img class="gallery__img" src="img/picture9.jpg" alt="Картина">
+								<div class="swiper-slide gallery__slide">
+									<div class="gallery__picture" data-path="9" data-animation="fade" data-speed="300" data-painter="Казимир Малевич" data-name-picture="“Женщина с граблями”" data-date="1931-1932" tabindex="0">
+										<img class="gallery__img" src="img/picture9.jpg" alt="Картина">
+
+										<p class="gallery__description">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+									</div>
 								</div>
-								<div class="swiper-slide gallery__picture" data-path="10" data-animation="fade" data-speed="300" tabindex="0">
-									<img class="gallery__img" src="img/picture10.jpg" alt="Картина">
+								<div class="swiper-slide gallery__slide">
+									<div class="gallery__picture" data-path="10" data-animation="fade" data-speed="300" data-painter="Казимир Малевич" data-name-picture="“Женщина с граблями”" data-date="1931-1932" tabindex="0">
+										<img class="gallery__img" src="img/picture10.jpg" alt="Картина">
+
+										<p class="gallery__description">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+									</div>
 								</div>
-								<div class="swiper-slide gallery__picture" data-path="11" data-animation="fade" data-speed="300" tabindex="0">
-									<img class="gallery__img" src="img/picture11.jpg" alt="Картина">
+								<div class="swiper-slide gallery__slide">
+									<div class="gallery__picture" data-path="11" data-animation="fade" data-speed="300" data-painter="Казимир Малевич" data-name-picture="“Женщина с граблями”" data-date="1931-1932" tabindex="0">
+										<img class="gallery__img" src="img/picture11.jpg" alt="Картина">
+
+										<p class="gallery__description">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+									</div>
 								</div>
-								<div class="swiper-slide gallery__picture" data-path="12" data-animation="fade" data-speed="300" tabindex="0">
-									<img class="gallery__img" src="img/picture12.jpg" alt="Картина">
+								<div class="swiper-slide gallery__slide">
+									<div class="gallery__picture" data-path="12" data-animation="fade" data-speed="300" data-painter="Казимир Малевич" data-name-picture="“Женщина с граблями”" data-date="1931-1932" tabindex="0">
+										<img class="gallery__img" src="img/picture12.jpg" alt="Картина">
+
+										<p class="gallery__description">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+									</div>
 								</div>
-								<div class="swiper-slide gallery__picture" data-path="13" data-animation="fade" data-speed="300" tabindex="0">
-									<img class="gallery__img" src="img/picture13.jpg" alt="Картина">
+								<div class="swiper-slide gallery__slide">
+									<div class="gallery__picture" data-path="13" data-animation="fade" data-speed="300" data-painter="Казимир Малевич" data-name-picture="“Женщина с граблями”" data-date="1931-1932" tabindex="0">
+										<img class="gallery__img" src="img/picture13.jpg" alt="Картина">
+
+										<p class="gallery__description">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+									</div>
 								</div>
-								<div class="swiper-slide gallery__picture" data-path="14" data-animation="fade" data-speed="300" tabindex="0">
-									<img class="gallery__img" src="img/picture14.jpg" alt="Картина">
+								<div class="swiper-slide gallery__slide">
+									<div class="gallery__picture" data-path="14" data-animation="fade" data-speed="300" data-painter="Казимир Малевич" data-name-picture="“Женщина с граблями”" data-date="1931-1932" tabindex="0">
+										<img class="gallery__img" src="img/picture14.jpg" alt="Картина">
+
+										<p class="gallery__description">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+									</div>
 								</div>
-								<div class="swiper-slide gallery__picture" data-path="15" data-animation="fade" data-speed="300" tabindex="0">
-									<img class="gallery__img" src="img/picture15.jpg" alt="Картина">
+								<div class="swiper-slide gallery__slide">
+									<div class="gallery__picture" data-path="15" data-animation="fade" data-speed="300" data-painter="Казимир Малевич" data-name-picture="“Женщина с граблями”" data-date="1931-1932" tabindex="0">
+										<img class="gallery__img" src="img/picture15.jpg" alt="Картина">
+
+										<p class="gallery__description">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+									</div>
 								</div>
-								<div class="swiper-slide gallery__picture" data-path="16" data-animation="fade" data-speed="300" tabindex="0">
-									<img class="gallery__img" src="img/picture16.jpg" alt="Картина">
+								<div class="swiper-slide gallery__slide">
+									<div class="gallery__picture" data-path="16" data-animation="fade" data-speed="300" data-painter="Казимир Малевич" data-name-picture="“Женщина с граблями”" data-date="1931-1932" tabindex="0">
+										<img class="gallery__img" src="img/picture16.jpg" alt="Картина">
+
+										<p class="gallery__description">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+									</div>
 								</div>
-								<div class="swiper-slide gallery__picture" data-path="17" data-animation="fade" data-speed="300" tabindex="0">
-									<img class="gallery__img" src="img/picture17.jpg" alt="Картина">
+								<div class="swiper-slide gallery__slide">
+									<div class="gallery__picture" data-path="17" data-animation="fade" data-speed="300" data-painter="Казимир Малевич" data-name-picture="“Женщина с граблями”" data-date="1931-1932" tabindex="0">
+										<img class="gallery__img" src="img/picture17.jpg" alt="Картина">
+
+										<p class="gallery__description">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+									</div>
 								</div>
-								<div class="swiper-slide gallery__picture" data-path="18" data-animation="fade" data-speed="300" tabindex="0">
-									<img class="gallery__img" src="img/picture18.jpg" alt="Картина">
+								<div class="swiper-slide gallery__slide">
+									<div class="gallery__picture" data-path="18" data-animation="fade" data-speed="300" data-painter="Казимир Малевич" data-name-picture="“Женщина с граблями”" data-date="1931-1932" tabindex="0">
+										<img class="gallery__img" src="img/picture18.jpg" alt="Картина">
+
+										<p class="gallery__description">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+									</div>
 								</div>
-								<div class="swiper-slide gallery__picture" data-path="19" data-animation="fade" data-speed="300" tabindex="0">
-									<img class="gallery__img" src="img/picture19.jpg" alt="Картина">
+								<div class="swiper-slide gallery__slide">
+									<div class="gallery__picture" data-path="19" data-animation="fade" data-speed="300" data-painter="Казимир Малевич" data-name-picture="“Женщина с граблями”" data-date="1931-1932" tabindex="0">
+										<img class="gallery__img" src="img/picture19.jpg" alt="Картина">
+
+										<p class="gallery__description">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+									</div>
 								</div>
-								<div class="swiper-slide gallery__picture" data-path="20" data-animation="fade" data-speed="300" tabindex="0">
-									<img class="gallery__img" src="img/picture20.jpg" alt="Картина">
+								<div class="swiper-slide gallery__slide">
+									<div class="gallery__picture" data-path="20" data-animation="fade" data-speed="300" data-painter="Казимир Малевич" data-name-picture="“Женщина с граблями”" data-date="1931-1932" tabindex="0">
+										<img class="gallery__img" src="img/picture20.jpg" alt="Картина">
+
+										<p class="gallery__description">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+									</div>
 								</div>
-								<div class="swiper-slide gallery__picture" data-path="21" data-animation="fade" data-speed="300" tabindex="0">
-									<img class="gallery__img" src="img/picture21.jpg" alt="Картина">
+								<div class="swiper-slide gallery__slide">
+									<div class="gallery__picture" data-path="21" data-animation="fade" data-speed="300" data-painter="Казимир Малевич" data-name-picture="“Женщина с граблями”" data-date="1931-1932" tabindex="0">
+										<img class="gallery__img" src="img/picture21.jpg" alt="Картина">
+
+										<p class="gallery__description">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+									</div>
 								</div>
-								<div class="swiper-slide gallery__picture" data-path="22" data-animation="fade" data-speed="300" tabindex="0">
-									<img class="gallery__img" src="img/picture22.jpg" alt="Картина">
+								<div class="swiper-slide gallery__slide">
+									<div class="gallery__picture" data-path="22" data-animation="fade" data-speed="300" data-painter="Казимир Малевич" data-name-picture="“Женщина с граблями”" data-date="1931-1932" tabindex="0">
+										<img class="gallery__img" src="img/picture22.jpg" alt="Картина">
+
+										<p class="gallery__description">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+									</div>
 								</div>
-								<div class="swiper-slide gallery__picture" data-path="23" data-animation="fade" data-speed="300" tabindex="0">
-									<img class="gallery__img" src="img/picture23.jpg" alt="Картина">
+								<div class="swiper-slide gallery__slide">
+									<div class="gallery__picture" data-path="23" data-animation="fade" data-speed="300" data-painter="Казимир Малевич" data-name-picture="“Женщина с граблями”" data-date="1931-1932" tabindex="0">
+										<img class="gallery__img" src="img/picture23.jpg" alt="Картина">
+
+										<p class="gallery__description">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+									</div>
 								</div>
-								<div class="swiper-slide gallery__picture" data-path="24" data-animation="fade" data-speed="300" tabindex="0">
-									<img class="gallery__img" src="img/picture24.jpg" alt="Картина">
+								<div class="swiper-slide gallery__slide">
+									<div class="gallery__picture" data-path="24" data-animation="fade" data-speed="300" data-painter="Казимир Малевич" data-name-picture="“Женщина с граблями”" data-date="1931-1932" tabindex="0">
+										<img class="gallery__img" src="img/picture24.jpg" alt="Картина">
+
+										<p class="gallery__description">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -417,477 +513,17 @@
 		</main>
 
 		<div class="modal">
-			<div class="modal__container" data-target="1">
+			<div class="modal__container">
 				<div class="modal__content">
 					<div class="modal__img">
-						<img src="img/picture1.jpg" alt="Картина">
+						<img class="js-modal-img" src="#" alt="Картина">
 					</div>
 
 					<div class="modal__text modal-text">
-						<h3 class="modal-text__subtitle">Казимир Малевич</h3>
-						<span class="modal-text__name">“Женщина с граблями”</span>
-						<span class="modal-text__date">1931-1932</span>
-						<p class="modal-text__desc">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
-					</div>
-				</div>
-
-				<button class="modal__close modal-btn btn--reset">
-					<svg class="modal-btn__svg">
-						<use xlink:href="img/sprite.svg#modal-close"></use>
-					</svg>
-				</button>
-			</div>
-			<div class="modal__container" data-target="2">
-				<div class="modal__content">
-					<div class="modal__img">
-						<img src="img/picture2.jpg" alt="Картина">
-					</div>
-
-					<div class="modal__text modal-text">
-						<h3 class="modal-text__subtitle">Казимир Малевич</h3>
-						<span class="modal-text__name">“Женщина с граблями”</span>
-						<span class="modal-text__date">1931-1932</span>
-						<p class="modal-text__desc">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
-					</div>
-				</div>
-
-				<button class="modal__close modal-btn btn--reset">
-					<svg class="modal-btn__svg">
-						<use xlink:href="img/sprite.svg#modal-close"></use>
-					</svg>
-				</button>
-			</div>
-			<div class="modal__container" data-target="3">
-				<div class="modal__content">
-					<div class="modal__img">
-						<img src="img/picture3.jpg" alt="Картина">
-					</div>
-
-					<div class="modal__text modal-text">
-						<h3 class="modal-text__subtitle">Казимир Малевич</h3>
-						<span class="modal-text__name">“Женщина с граблями”</span>
-						<span class="modal-text__date">1931-1932</span>
-						<p class="modal-text__desc">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
-					</div>
-				</div>
-
-				<button class="modal__close modal-btn btn--reset">
-					<svg class="modal-btn__svg">
-						<use xlink:href="img/sprite.svg#modal-close"></use>
-					</svg>
-				</button>
-			</div>
-			<div class="modal__container" data-target="4">
-				<div class="modal__content">
-					<div class="modal__img">
-						<img src="img/picture4.jpg" alt="Картина">
-					</div>
-
-					<div class="modal__text modal-text">
-						<h3 class="modal-text__subtitle">Казимир Малевич</h3>
-						<span class="modal-text__name">“Женщина с граблями”</span>
-						<span class="modal-text__date">1931-1932</span>
-						<p class="modal-text__desc">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
-					</div>
-				</div>
-
-				<button class="modal__close modal-btn btn--reset">
-					<svg class="modal-btn__svg">
-						<use xlink:href="img/sprite.svg#modal-close"></use>
-					</svg>
-				</button>
-			</div>
-			<div class="modal__container" data-target="5">
-				<div class="modal__content">
-					<div class="modal__img">
-						<img src="img/picture5.jpg" alt="Картина">
-					</div>
-
-					<div class="modal__text modal-text">
-						<h3 class="modal-text__subtitle">Казимир Малевич</h3>
-						<span class="modal-text__name">“Женщина с граблями”</span>
-						<span class="modal-text__date">1931-1932</span>
-						<p class="modal-text__desc">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
-					</div>
-				</div>
-
-				<button class="modal__close modal-btn btn--reset">
-					<svg class="modal-btn__svg">
-						<use xlink:href="img/sprite.svg#modal-close"></use>
-					</svg>
-				</button>
-			</div>
-			<div class="modal__container" data-target="6">
-				<div class="modal__content">
-					<div class="modal__img">
-						<img src="img/picture6.jpg" alt="Картина">
-					</div>
-
-					<div class="modal__text modal-text">
-						<h3 class="modal-text__subtitle">Казимир Малевич</h3>
-						<span class="modal-text__name">“Женщина с граблями”</span>
-						<span class="modal-text__date">1931-1932</span>
-						<p class="modal-text__desc">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
-					</div>
-				</div>
-
-				<button class="modal__close modal-btn btn--reset">
-					<svg class="modal-btn__svg">
-						<use xlink:href="img/sprite.svg#modal-close"></use>
-					</svg>
-				</button>
-			</div>
-			<div class="modal__container" data-target="7">
-				<div class="modal__content">
-					<div class="modal__img">
-						<img src="img/picture7.jpg" alt="Картина">
-					</div>
-
-					<div class="modal__text modal-text">
-						<h3 class="modal-text__subtitle">Казимир Малевич</h3>
-						<span class="modal-text__name">“Женщина с граблями”</span>
-						<span class="modal-text__date">1931-1932</span>
-						<p class="modal-text__desc">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
-					</div>
-				</div>
-
-				<button class="modal__close modal-btn btn--reset">
-					<svg class="modal-btn__svg">
-						<use xlink:href="img/sprite.svg#modal-close"></use>
-					</svg>
-				</button>
-			</div>
-			<div class="modal__container" data-target="8">
-				<div class="modal__content">
-					<div class="modal__img">
-						<img src="img/picture8.jpg" alt="Картина">
-					</div>
-
-					<div class="modal__text modal-text">
-						<h3 class="modal-text__subtitle">Казимир Малевич</h3>
-						<span class="modal-text__name">“Женщина с граблями”</span>
-						<span class="modal-text__date">1931-1932</span>
-						<p class="modal-text__desc">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
-					</div>
-				</div>
-
-				<button class="modal__close modal-btn btn--reset">
-					<svg class="modal-btn__svg">
-						<use xlink:href="img/sprite.svg#modal-close"></use>
-					</svg>
-				</button>
-			</div>
-			<div class="modal__container" data-target="9">
-				<div class="modal__content">
-					<div class="modal__img">
-						<img src="img/picture9.jpg" alt="Картина">
-					</div>
-
-					<div class="modal__text modal-text">
-						<h3 class="modal-text__subtitle">Казимир Малевич</h3>
-						<span class="modal-text__name">“Женщина с граблями”</span>
-						<span class="modal-text__date">1931-1932</span>
-						<p class="modal-text__desc">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
-					</div>
-				</div>
-
-				<button class="modal__close modal-btn btn--reset">
-					<svg class="modal-btn__svg">
-						<use xlink:href="img/sprite.svg#modal-close"></use>
-					</svg>
-				</button>
-			</div>
-			<div class="modal__container" data-target="10">
-				<div class="modal__content">
-					<div class="modal__img">
-						<img src="img/picture10.jpg" alt="Картина">
-					</div>
-
-					<div class="modal__text modal-text">
-						<h3 class="modal-text__subtitle">Казимир Малевич</h3>
-						<span class="modal-text__name">“Женщина с граблями”</span>
-						<span class="modal-text__date">1931-1932</span>
-						<p class="modal-text__desc">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
-					</div>
-				</div>
-
-				<button class="modal__close modal-btn btn--reset">
-					<svg class="modal-btn__svg">
-						<use xlink:href="img/sprite.svg#modal-close"></use>
-					</svg>
-				</button>
-			</div>
-			<div class="modal__container" data-target="11">
-				<div class="modal__content">
-					<div class="modal__img">
-						<img src="img/picture11.jpg" alt="Картина">
-					</div>
-
-					<div class="modal__text modal-text">
-						<h3 class="modal-text__subtitle">Казимир Малевич</h3>
-						<span class="modal-text__name">“Женщина с граблями”</span>
-						<span class="modal-text__date">1931-1932</span>
-						<p class="modal-text__desc">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
-					</div>
-				</div>
-
-				<button class="modal__close modal-btn btn--reset">
-					<svg class="modal-btn__svg">
-						<use xlink:href="img/sprite.svg#modal-close"></use>
-					</svg>
-				</button>
-			</div>
-			<div class="modal__container" data-target="12">
-				<div class="modal__content">
-					<div class="modal__img">
-						<img src="img/picture12.jpg" alt="Картина">
-					</div>
-
-					<div class="modal__text modal-text">
-						<h3 class="modal-text__subtitle">Казимир Малевич</h3>
-						<span class="modal-text__name">“Женщина с граблями”</span>
-						<span class="modal-text__date">1931-1932</span>
-						<p class="modal-text__desc">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
-					</div>
-				</div>
-
-				<button class="modal__close modal-btn btn--reset">
-					<svg class="modal-btn__svg">
-						<use xlink:href="img/sprite.svg#modal-close"></use>
-					</svg>
-				</button>
-			</div>
-			<div class="modal__container" data-target="13">
-				<div class="modal__content">
-					<div class="modal__img">
-						<img src="img/picture13.jpg" alt="Картина">
-					</div>
-
-					<div class="modal__text modal-text">
-						<h3 class="modal-text__subtitle">Казимир Малевич</h3>
-						<span class="modal-text__name">“Женщина с граблями”</span>
-						<span class="modal-text__date">1931-1932</span>
-						<p class="modal-text__desc">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
-					</div>
-				</div>
-
-				<button class="modal__close modal-btn btn--reset">
-					<svg class="modal-btn__svg">
-						<use xlink:href="img/sprite.svg#modal-close"></use>
-					</svg>
-				</button>
-			</div>
-			<div class="modal__container" data-target="14">
-				<div class="modal__content">
-					<div class="modal__img">
-						<img src="img/picture14.jpg" alt="Картина">
-					</div>
-
-					<div class="modal__text modal-text">
-						<h3 class="modal-text__subtitle">Казимир Малевич</h3>
-						<span class="modal-text__name">“Женщина с граблями”</span>
-						<span class="modal-text__date">1931-1932</span>
-						<p class="modal-text__desc">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
-					</div>
-				</div>
-
-				<button class="modal__close modal-btn btn--reset">
-					<svg class="modal-btn__svg">
-						<use xlink:href="img/sprite.svg#modal-close"></use>
-					</svg>
-				</button>
-			</div>
-			<div class="modal__container" data-target="15">
-				<div class="modal__content">
-					<div class="modal__img">
-						<img src="img/picture15.jpg" alt="Картина">
-					</div>
-
-					<div class="modal__text modal-text">
-						<h3 class="modal-text__subtitle">Казимир Малевич</h3>
-						<span class="modal-text__name">“Женщина с граблями”</span>
-						<span class="modal-text__date">1931-1932</span>
-						<p class="modal-text__desc">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
-					</div>
-				</div>
-
-				<button class="modal__close modal-btn btn--reset">
-					<svg class="modal-btn__svg">
-						<use xlink:href="img/sprite.svg#modal-close"></use>
-					</svg>
-				</button>
-			</div>
-			<div class="modal__container" data-target="16">
-				<div class="modal__content">
-					<div class="modal__img">
-						<img src="img/picture16.jpg" alt="Картина">
-					</div>
-
-					<div class="modal__text modal-text">
-						<h3 class="modal-text__subtitle">Казимир Малевич</h3>
-						<span class="modal-text__name">“Женщина с граблями”</span>
-						<span class="modal-text__date">1931-1932</span>
-						<p class="modal-text__desc">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
-					</div>
-				</div>
-
-				<button class="modal__close modal-btn btn--reset">
-					<svg class="modal-btn__svg">
-						<use xlink:href="img/sprite.svg#modal-close"></use>
-					</svg>
-				</button>
-			</div>
-			<div class="modal__container" data-target="17">
-				<div class="modal__content">
-					<div class="modal__img">
-						<img src="img/picture17.jpg" alt="Картина">
-					</div>
-
-					<div class="modal__text modal-text">
-						<h3 class="modal-text__subtitle">Казимир Малевич</h3>
-						<span class="modal-text__name">“Женщина с граблями”</span>
-						<span class="modal-text__date">1931-1932</span>
-						<p class="modal-text__desc">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
-					</div>
-				</div>
-
-				<button class="modal__close modal-btn btn--reset">
-					<svg class="modal-btn__svg">
-						<use xlink:href="img/sprite.svg#modal-close"></use>
-					</svg>
-				</button>
-			</div>
-			<div class="modal__container" data-target="18">
-				<div class="modal__content">
-					<div class="modal__img">
-						<img src="img/picture18.jpg" alt="Картина">
-					</div>
-
-					<div class="modal__text modal-text">
-						<h3 class="modal-text__subtitle">Казимир Малевич</h3>
-						<span class="modal-text__name">“Женщина с граблями”</span>
-						<span class="modal-text__date">1931-1932</span>
-						<p class="modal-text__desc">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
-					</div>
-				</div>
-
-				<button class="modal__close modal-btn btn--reset">
-					<svg class="modal-btn__svg">
-						<use xlink:href="img/sprite.svg#modal-close"></use>
-					</svg>
-				</button>
-			</div>
-			<div class="modal__container" data-target="19">
-				<div class="modal__content">
-					<div class="modal__img">
-						<img src="img/picture19.jpg" alt="Картина">
-					</div>
-
-					<div class="modal__text modal-text">
-						<h3 class="modal-text__subtitle">Казимир Малевич</h3>
-						<span class="modal-text__name">“Женщина с граблями”</span>
-						<span class="modal-text__date">1931-1932</span>
-						<p class="modal-text__desc">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
-					</div>
-				</div>
-
-				<button class="modal__close modal-btn btn--reset">
-					<svg class="modal-btn__svg">
-						<use xlink:href="img/sprite.svg#modal-close"></use>
-					</svg>
-				</button>
-			</div>
-			<div class="modal__container" data-target="20">
-				<div class="modal__content">
-					<div class="modal__img">
-						<img src="img/picture20.jpg" alt="Картина">
-					</div>
-
-					<div class="modal__text modal-text">
-						<h3 class="modal-text__subtitle">Казимир Малевич</h3>
-						<span class="modal-text__name">“Женщина с граблями”</span>
-						<span class="modal-text__date">1931-1932</span>
-						<p class="modal-text__desc">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
-					</div>
-				</div>
-
-				<button class="modal__close modal-btn btn--reset">
-					<svg class="modal-btn__svg">
-						<use xlink:href="img/sprite.svg#modal-close"></use>
-					</svg>
-				</button>
-			</div>
-			<div class="modal__container" data-target="21">
-				<div class="modal__content">
-					<div class="modal__img">
-						<img src="img/picture21.jpg" alt="Картина">
-					</div>
-
-					<div class="modal__text modal-text">
-						<h3 class="modal-text__subtitle">Казимир Малевич</h3>
-						<span class="modal-text__name">“Женщина с граблями”</span>
-						<span class="modal-text__date">1931-1932</span>
-						<p class="modal-text__desc">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
-					</div>
-				</div>
-
-				<button class="modal__close modal-btn btn--reset">
-					<svg class="modal-btn__svg">
-						<use xlink:href="img/sprite.svg#modal-close"></use>
-					</svg>
-				</button>
-			</div>
-			<div class="modal__container" data-target="22">
-				<div class="modal__content">
-					<div class="modal__img">
-						<img src="img/picture22.jpg" alt="Картина">
-					</div>
-
-					<div class="modal__text modal-text">
-						<h3 class="modal-text__subtitle">Казимир Малевич</h3>
-						<span class="modal-text__name">“Женщина с граблями”</span>
-						<span class="modal-text__date">1931-1932</span>
-						<p class="modal-text__desc">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
-					</div>
-				</div>
-
-				<button class="modal__close modal-btn btn--reset">
-					<svg class="modal-btn__svg">
-						<use xlink:href="img/sprite.svg#modal-close"></use>
-					</svg>
-				</button>
-			</div>
-			<div class="modal__container" data-target="23">
-				<div class="modal__content">
-					<div class="modal__img">
-						<img src="img/picture23.jpg" alt="Картина">
-					</div>
-
-					<div class="modal__text modal-text">
-						<h3 class="modal-text__subtitle">Казимир Малевич</h3>
-						<span class="modal-text__name">“Женщина с граблями”</span>
-						<span class="modal-text__date">1931-1932</span>
-						<p class="modal-text__desc">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
-					</div>
-				</div>
-
-				<button class="modal__close modal-btn btn--reset">
-					<svg class="modal-btn__svg">
-						<use xlink:href="img/sprite.svg#modal-close"></use>
-					</svg>
-				</button>
-			</div>
-			<div class="modal__container" data-target="24">
-				<div class="modal__content">
-					<div class="modal__img">
-						<img src="img/picture24.jpg" alt="Картина">
-					</div>
-
-					<div class="modal__text modal-text">
-						<h3 class="modal-text__subtitle">Казимир Малевич</h3>
-						<span class="modal-text__name">“Женщина с граблями”</span>
-						<span class="modal-text__date">1931-1932</span>
-						<p class="modal-text__desc">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930-1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
+						<h3 class="modal-text__subtitle"></h3>
+						<span class="modal-text__name"></span>
+						<span class="modal-text__date"></span>
+						<p class="modal-text__desc"></p>
 					</div>
 				</div>
 

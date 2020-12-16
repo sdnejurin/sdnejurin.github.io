@@ -1185,7 +1185,7 @@ body {
 }
 
 .about-us {
-  margin-bottom: 69px;
+  margin-bottom: 66px;
 }
 
 .about-us__subtitle {
@@ -1206,8 +1206,8 @@ body {
 }
 
 .gallery {
-  padding-top: 81px;
-  padding-bottom: 80px;
+  padding-top: 85px;
+  padding-bottom: 75px;
   background: url("../img/gallery.jpg") no-repeat 50%;
   color: var(--color-white);
 }
@@ -1277,6 +1277,10 @@ body {
   outline-color: var(--color-purple);
 }
 
+.gallery__description {
+  display: none;
+}
+
 .gallery-text {
   font-weight: 600;
   font-size: 16px;
@@ -1333,7 +1337,7 @@ body {
   width: 133px;
   height: 34px;
   margin-bottom: 28px;
-  padding-left: 3px;
+  padding-left: 5px;
 }
 
 .gallery-nav__btn {
@@ -1395,13 +1399,14 @@ body {
   position: static;
 }
 
-.gallery-form__fieldset {
+.gallery-form__label {
   border: none;
   padding: 0;
   margin: 0;
 }
 
-.gallery-form__legend {
+.gallery-form__text {
+  display: inline-block;
   margin-bottom: 10px;
   font-weight: 600;
   font-size: 16px;

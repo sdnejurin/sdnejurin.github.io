@@ -37,17 +37,14 @@
 .choices[data-type*='select-one']:after {
 	content: '';
 	z-index: 21;
-  height: 13px;
-  width: 13px;
+  height: 12px;
+  width: 12px;
   position: absolute;
-  right: 14.5px;
-  top: 50%;
-  margin-top: -7.5px;
-  pointer-events: none;
-}
-
-.choices[data-type*='select-one'].is-open:after {
-  margin-top: -5.5px;
+  right: 14px;
+  top: 38%;
+	pointer-events: none;
+	background: url("../img/icons/down-arrow.svg") no-repeat 50% 50%;
+	transition: transform .3s;
 }
 
 .choices__inner {
