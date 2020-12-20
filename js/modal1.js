@@ -6,10 +6,10 @@ class Modal {
 		}
 		this.options = Object.assign(defaultOptions, options);
 		this.modal = document.querySelector('.modal');
+		// this.content = document.querySelector('.gallery__picture');
 		this.speed = false;
 		this.animation = false;
 		this.isOpen = false;
-		this.clickedElement = false;
 		this.modalContainer = false;
 		this.previousActiveElement = false;
 		this.fixBlocks = document.querySelectorAll('.fix-block');
@@ -21,6 +21,11 @@ class Modal {
 			'textarea',
 			'[tabindex]'
 		];
+		// this.srcImage = false;
+		// this.painter = false;
+		// this.picture = false;
+		// this.date = false;
+		// this.description = false;
 		this.events();
 	}
 
@@ -28,15 +33,25 @@ class Modal {
 		if (this.modal) {
 			document.addEventListener('click', function(e){
 				const clickedElement = e.target.closest('[data-path]');
-				this.clickedElement = clickedElement;
 				if (clickedElement) {
-					let target = clickedElement.dataset.path;
+					// let target = clickedElement.dataset.path;
 					let animation = clickedElement.dataset.animation;
 					let speed = clickedElement.dataset.speed;
+					// let painter = clickedElement.dataset.painter;
+					// let picture = clickedElement.dataset.namePicture;
+					// let date = clickedElement.dataset.date;
+					// let description = clickedElement.querySelector('.gallery__description');
 					this.animation = animation ? animation : 'fade';
 					this.speed = speed ? parseInt(speed) : 300;
-					this.modalContainer = document.querySelector(`[data-target="${target}"]`);
+					// this.srcImage = clickedElement.querySelector('.gallery__img').getAttribute('src');
+					// this.painter = document.querySelector('.modal-text__subtitle').innerHTML = painter;
+					// this.picture = document.querySelector('.modal-text__name').innerHTML = picture;
+					// this.date = document.querySelector('.modal-text__date').innerHTML = date;
+					// this.description = document.querySelector('.modal-text__desc').innerHTML = description.textContent;
+					this.modalContainer = document.querySelector('.modal__container');
+					// this.modalContainer = document.querySelector(`[data-target="${target}"]`);
 					this.open();
+					// document.querySelector('.js-modal-img').setAttribute('src', modal.srcImage);
 					return;
 				}
 
@@ -160,13 +175,30 @@ class Modal {
 
 const modal = new Modal({
 	isOpen: (modal) => {
-		modal.modalContainer.querySelector('.js-modal-img').setAttribute('src', modal.clickedElement.querySelector('.gallery__img').getAttribute('src'));
-		modal.modalContainer.querySelector('.modal-text__subtitle').innerHTML = modal.clickedElement.dataset.painter;
-		modal.modalContainer.querySelector('.modal-text__name').innerHTML = modal.clickedElement.dataset.namePicture;
-		modal.modalContainer.querySelector('.modal-text__date').innerHTML = modal.clickedElement.dataset.date;
-		modal.modalContainer.querySelector('.modal-text__desc').innerHTML = modal.clickedElement.querySelector('.gallery__description').textContent;
+		// this.content = document.querySelector('.gallery__picture');
+		// console.log(this);
+		// console.log(document.querySelector('.modal-text__subtitle'));
+		let target = this.
+		console.log(target);
+		// let painter = document.querySelector('.modal-text__subtitle').innerHTML;
+		// const clickedElement = e.target.closest('[data-path]');
+		// console.log(clickedElement);
+
+		// let painter = clickedElement.dataset.painter;
+		// let picture = clickedElement.dataset.namePicture;
+		// let date = clickedElement.dataset.date;
+		// let description = clickedElement.querySelector('.gallery__description');
+
+		// this.srcImage = clickedElement.querySelector('.gallery__img').getAttribute('src');
+		// this.painter = document.querySelector('.modal-text__subtitle').innerHTML = painter;
+		// this.picture = document.querySelector('.modal-text__name').innerHTML = picture;
+		// this.date = document.querySelector('.modal-text__date').innerHTML = date;
+		// this.description = document.querySelector('.modal-text__desc').innerHTML = description.textContent;
+
+		console.log(modal);
+		console.log('opened');
 	},
 	isClose: () => {
-		// console.log('closed');
+		console.log('closed');
 	},
 });
