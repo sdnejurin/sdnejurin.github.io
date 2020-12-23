@@ -30,6 +30,7 @@
   --color-biloba: #D1A9F0;
   --color-heliotrope: #C283F3;
   --color-purple: #7943A4;
+  --color-gray: #999999;
   --transition-time: .3s;
 }
 
@@ -1206,6 +1207,7 @@ body {
 }
 
 .gallery {
+  margin-bottom: 80px;
   padding-top: 85px;
   padding-bottom: 75px;
   background: url("../img/gallery.jpg") no-repeat 50%;
@@ -1587,5 +1589,285 @@ body {
   left: 0;
   top: 0;
   width: 100%;
+}
+
+.catalog {
+  margin-bottom: 50px;
+}
+
+.catalog__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 12px;
+}
+
+.catalog__subtitle {
+  margin-right: 30px;
+}
+
+.catalog__btn {
+  width: 66px;
+  height: 66px;
+  border: 2px solid transparent;
+  border-radius: 100%;
+  -webkit-transition: border-color var(--transition-time);
+  transition: border-color var(--transition-time);
+}
+
+.catalog__btn--focused {
+  border-color: var(--color-amethyst);
+}
+
+.catalog__btn:focus {
+  outline: none;
+}
+
+.catalog__btn:focus-visible {
+  border-color: var(--color-amethyst);
+}
+
+.catalog__btn:not(:last-child) {
+  margin-right: 26px;
+}
+
+.catalog__btn--fr {
+  background: url("../img/icons/catalog-fr.png") no-repeat 50% 50%;
+  background-size: 46px;
+}
+
+.catalog__btn--ge {
+  background: url("../img/icons/catalog-ge.png") no-repeat 50% 50%;
+  background-size: 46px;
+}
+
+.catalog__btn--it {
+  background: url("../img/icons/catalog-it.png") no-repeat 50% 50%;
+  background-size: 46px;
+}
+
+.catalog__btn--ru {
+  background: url("../img/icons/catalog-ru.png") no-repeat 50% 50%;
+  background-size: 46px;
+}
+
+.catalog__btn--bl {
+  background: url("../img/icons/catalog-bl.png") no-repeat 50% 50%;
+  background-size: 46px;
+}
+
+.catalog__middle {
+  width: 68%;
+  margin-bottom: 39px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.catalog__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.painter {
+  width: 750px;
+  height: 470px;
+}
+
+.painter__img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 31px;
+  background-color: var(--color-gray);
+}
+
+.painter__subtitle {
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.painter__date {
+  display: inline-block;
+  margin-bottom: 7px;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--color-gray);
+}
+
+.painter__desc {
+  line-height: 32px;
+}
+
+.dates {
+  width: 800px;
+}
+
+.dates__subtitle {
+  position: relative;
+  padding: 38px 0 42px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  border-top: 1px solid #CACACA;
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
+  -webkit-transition: border-color var(--transition-time);
+  transition: border-color var(--transition-time);
+}
+
+.dates__subtitle::before {
+  position: absolute;
+  top: 29%;
+  right: 0;
+  content: '';
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background: url("../img/icons/down-arrow-black.svg") no-repeat 50% 50%;
+  background-color: #ECECEC;
+  -webkit-transition: -webkit-transform var(--transition-time);
+  transition: -webkit-transform var(--transition-time);
+  transition: transform var(--transition-time);
+  transition: transform var(--transition-time), -webkit-transform var(--transition-time);
+}
+
+.dates__subtitle--last {
+  border-color: #CACACA;
+}
+
+.dates__columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 26px 0 29px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 32px;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: border-color var(--transition-time);
+  transition: border-color var(--transition-time);
+}
+
+.dates__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 208px;
+}
+
+.dates__column:not(:last-child) {
+  margin-right: 50px;
+}
+
+.dates__link-subtitle {
+  display: inline-block;
+  outline: 2px solid transparent;
+  -webkit-transition: outline var(--transition-time), color var(--transition-time);
+  transition: outline var(--transition-time), color var(--transition-time);
+}
+
+.dates__link-subtitle:hover {
+  color: var(--color-amethyst);
+}
+
+.dates__link-subtitle:focus-visible {
+  outline: 2px solid var(--color-amethyst);
+}
+
+.dates__link {
+  display: inline-block;
+  outline: 2px solid transparent;
+  -webkit-transition: outline var(--transition-time), color var(--transition-time);
+  transition: outline var(--transition-time), color var(--transition-time);
+}
+
+.dates__link:hover {
+  color: var(--color-amethyst);
+}
+
+.dates__link:focus-visible {
+  outline: 2px solid var(--color-amethyst);
+}
+
+.catalog-bottom--fr {
+  display: none;
+  -webkit-animation: showBlock 1s;
+          animation: showBlock 1s;
+}
+
+.catalog-bottom--ge {
+  display: none;
+  -webkit-animation: showBlock 1s;
+          animation: showBlock 1s;
+}
+
+.catalog-bottom--it {
+  display: none;
+  -webkit-animation: showBlock 1s;
+          animation: showBlock 1s;
+}
+
+.catalog-bottom--ru {
+  display: none;
+  -webkit-animation: showBlock 1s;
+          animation: showBlock 1s;
+}
+
+.catalog-bottom--bl {
+  display: none;
+  -webkit-animation: showBlock 1s;
+          animation: showBlock 1s;
+}
+
+.catalog-bottom--active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@-webkit-keyframes showBlock {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes showBlock {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.ui-state-active::before {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.ui-state-focus {
+  outline: none !important;
+}
+
+.ui-accordion-content-active {
+  border-color: var(--color-amethyst);
 }
 /*# sourceMappingURL=main.css.map */
