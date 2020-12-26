@@ -1676,16 +1676,10 @@ body {
           justify-content: space-between;
 }
 
-.painter {
-  width: 750px;
+.painter__photo {
+  max-width: 750px;
   height: 470px;
-}
-
-.painter__img {
-  width: 100%;
-  height: 100%;
   margin-bottom: 31px;
-  background-color: var(--color-gray);
 }
 
 .painter__subtitle {
@@ -1713,8 +1707,13 @@ body {
 }
 
 .dates__subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
   position: relative;
-  padding: 38px 0 42px;
+  padding: 38px 0 24px;
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
@@ -1725,31 +1724,75 @@ body {
   transition: border-color var(--transition-time);
 }
 
-.dates__subtitle::before {
-  position: absolute;
-  top: 29%;
-  right: 0;
-  content: '';
+.dates__subtitle--last {
+  border-color: #CACACA;
+}
+
+.dates__link-subtitle {
+  display: inline-block;
+  margin-right: auto;
+  outline: 2px solid transparent;
+  -webkit-transition: outline var(--transition-time), color var(--transition-time);
+  transition: outline var(--transition-time), color var(--transition-time);
+}
+
+.dates__link-subtitle:hover {
+  color: var(--color-amethyst);
+}
+
+.dates__link-subtitle:focus-visible {
+  outline: 2px solid var(--color-amethyst);
+}
+
+.dates__btn {
+  position: relative;
   width: 50px;
   height: 50px;
   border-radius: 100%;
-  background: url("../img/icons/down-arrow-black.svg") no-repeat 50% 50%;
   background-color: #ECECEC;
-  -webkit-transition: -webkit-transform var(--transition-time);
-  transition: -webkit-transform var(--transition-time);
-  transition: transform var(--transition-time);
-  transition: transform var(--transition-time), -webkit-transform var(--transition-time);
+  border: 2px solid transparent;
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
+  -webkit-transition: border-color var(--transition-time), background-color var(--transition-time);
+  transition: border-color var(--transition-time), background-color var(--transition-time);
 }
 
-.dates__subtitle--last {
-  border-color: #CACACA;
+.dates__btn:focus {
+  outline: none;
+}
+
+.dates__btn:focus-visible {
+  border-color: var(--color-purple);
+}
+
+.dates__btn:hover {
+  background-color: var(--color-amethyst);
+}
+
+.dates__btn:active {
+  background-color: var(--color-purple);
+  border-color: var(--color-biloba);
+}
+
+.dates__svg {
+  position: absolute;
+  top: 43%;
+  right: 23%;
+  width: 24px;
+  height: 12px;
+  fill: none;
+  stroke: currentColor;
+  -webkit-transition: stroke var(--transition-time), -webkit-transform var(--transition-time);
+  transition: stroke var(--transition-time), -webkit-transform var(--transition-time);
+  transition: transform var(--transition-time), stroke var(--transition-time);
+  transition: transform var(--transition-time), stroke var(--transition-time), -webkit-transform var(--transition-time);
 }
 
 .dates__columns {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 26px 0 29px;
+  padding: 26px 0 27px;
   font-weight: normal;
   font-size: 16px;
   line-height: 32px;
@@ -1774,61 +1817,31 @@ body {
   margin-right: 50px;
 }
 
-.dates__link-subtitle {
-  display: inline-block;
+.dates__painter {
   outline: 2px solid transparent;
-  -webkit-transition: outline var(--transition-time), color var(--transition-time);
-  transition: outline var(--transition-time), color var(--transition-time);
+  cursor: pointer;
+  -webkit-transition: outline var(--transition-time), color var(--transition-time), text-shadow var(--transition-time);
+  transition: outline var(--transition-time), color var(--transition-time), text-shadow var(--transition-time);
 }
 
-.dates__link-subtitle:hover {
+.dates__painter:hover {
   color: var(--color-amethyst);
 }
 
-.dates__link-subtitle:focus-visible {
+.dates__painter:focus-visible {
   outline: 2px solid var(--color-amethyst);
 }
 
-.dates__link {
-  display: inline-block;
-  outline: 2px solid transparent;
-  -webkit-transition: outline var(--transition-time), color var(--transition-time);
-  transition: outline var(--transition-time), color var(--transition-time);
-}
-
-.dates__link:hover {
+.dates__painter--is-active {
   color: var(--color-amethyst);
+  text-shadow: currentColor 0 0 5px;
 }
 
-.dates__link:focus-visible {
-  outline: 2px solid var(--color-amethyst);
-}
-
-.catalog-bottom--fr {
+.dates__desc {
   display: none;
-  -webkit-animation: showBlock 1s;
-          animation: showBlock 1s;
 }
 
-.catalog-bottom--ge {
-  display: none;
-  -webkit-animation: showBlock 1s;
-          animation: showBlock 1s;
-}
-
-.catalog-bottom--it {
-  display: none;
-  -webkit-animation: showBlock 1s;
-          animation: showBlock 1s;
-}
-
-.catalog-bottom--ru {
-  display: none;
-  -webkit-animation: showBlock 1s;
-          animation: showBlock 1s;
-}
-
-.catalog-bottom--bl {
+.catalog-bottom {
   display: none;
   -webkit-animation: showBlock 1s;
           animation: showBlock 1s;
@@ -1858,9 +1871,13 @@ body {
   }
 }
 
-.ui-state-active::before {
+.ui-state-active > .dates__btn > .dates__svg {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+.dates__btn:hover > .dates__svg {
+  stroke: var(--color-white);
 }
 
 .ui-state-focus {

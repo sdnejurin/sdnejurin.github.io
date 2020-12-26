@@ -75,14 +75,10 @@
 }
 
 .painter {
-	width: 750px;
-	height: 470px;
-
-	&__img {
-		width: 100%;
-		height: 100%;
+	&__photo {
+		max-width: 750px;
+		height: 470px;
 		margin-bottom: 31px;
-		background-color: var(--color-gray);
 	}
 
 	&__subtitle {
@@ -110,8 +106,10 @@
 	width: 800px;
 
 	&__subtitle {
+		display: flex;
+		align-content: flex-start;
 		position: relative;
-		padding: 38px 0 42px;
+		padding: 38px 0 24px;
 		font-weight: 600;
 		font-size: 24px;
 		line-height: 32px;
@@ -120,27 +118,68 @@
 		cursor: pointer;
 		transition: border-color var(--transition-time);
 
-		&::before {
-			position: absolute;
-			top: 29%;
-			right: 0;
-			content: '';
-			width: 50px;
-			height: 50px;
-			border-radius: 100%;
-			background: url("../img/icons/down-arrow-black.svg") no-repeat 50% 50%;
-			background-color: #ECECEC;
-			transition: transform var(--transition-time);
-		}
-
 		&--last {
 			border-color: #CACACA;
 		}
 	}
 
+	&__link-subtitle {
+		display: inline-block;
+		margin-right: auto;
+		outline: 2px solid transparent;
+		transition: outline var(--transition-time), color var(--transition-time);
+
+		&:hover {
+			color: var(--color-amethyst);
+		}
+
+		&:focus-visible {
+			outline: 2px solid var(--color-amethyst);
+		}
+	}
+
+	&__btn {
+		position: relative;
+		width: 50px;
+		height: 50px;
+		border-radius: 100%;
+		background-color: #ECECEC;
+		border: 2px solid transparent;
+		transform: translateY(-6px);
+		transition: border-color var(--transition-time), background-color var(--transition-time);
+
+		&:focus {
+			outline: none;
+		}
+
+		&:focus-visible {
+			border-color: var(--color-purple);
+		}
+
+		&:hover {
+			background-color: var(--color-amethyst);
+		}
+
+		&:active {
+			background-color: var(--color-purple);
+			border-color: var(--color-biloba);
+		}
+	}
+
+	&__svg {
+		position: absolute;
+		top: 43%;
+		right: 23%;
+		width: 24px;
+		height: 12px;
+		fill: none;
+		stroke: currentColor;
+		transition: transform var(--transition-time), stroke var(--transition-time);
+	}
+
 	&__columns {
 		display: flex;
-		padding: 26px 0 29px;
+		padding: 26px 0 27px;
 		font-weight: normal;
 		font-size: 16px;
 		line-height: 32px;
@@ -159,10 +198,10 @@
 		}
 	}
 
-	&__link-subtitle {
-		display: inline-block;
+	&__painter {
 		outline: 2px solid transparent;
-		transition: outline var(--transition-time), color var(--transition-time);
+		cursor: pointer;
+		transition: outline var(--transition-time), color var(--transition-time), text-shadow var(--transition-time);
 
 		&:hover {
 			color: var(--color-amethyst);
@@ -170,49 +209,22 @@
 
 		&:focus-visible {
 			outline: 2px solid var(--color-amethyst);
+		}
+
+		&--is-active {
+			color: var(--color-amethyst);
+			text-shadow: currentColor 0 0 5px;
 		}
 	}
 
-	&__link {
-		display: inline-block;
-		outline: 2px solid transparent;
-		transition: outline var(--transition-time), color var(--transition-time);
-
-		&:hover {
-			color: var(--color-amethyst);
-		}
-
-		&:focus-visible {
-			outline: 2px solid var(--color-amethyst);
-		}
+	&__desc {
+		display: none;
 	}
 }
 
 .catalog-bottom {
-	&--fr {
-		display: none;
-		animation: showBlock 1s;
-	}
-
-	&--ge {
-		display: none;
-		animation: showBlock 1s;
-	}
-
-	&--it {
-		display: none;
-		animation: showBlock 1s;
-	}
-
-	&--ru {
-		display: none;
-		animation: showBlock 1s;
-	}
-
-	&--bl {
-		display: none;
-		animation: showBlock 1s;
-	}
+	display: none;
+	animation: showBlock 1s;
 
 	&--active {
 		display: flex;
@@ -228,8 +240,12 @@
 	}
 }
 
-.ui-state-active::before {
+.ui-state-active > .dates__btn > .dates__svg {
 	transform: rotate(180deg);
+}
+
+.dates__btn:hover > .dates__svg {
+	stroke: var(--color-white);
 }
 
 .ui-state-focus {
