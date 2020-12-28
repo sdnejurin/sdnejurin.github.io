@@ -1676,8 +1676,20 @@ body {
           justify-content: space-between;
 }
 
-.painter__photo {
+.painter {
   max-width: 750px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-animation: showBlock 1s;
+          animation: showBlock 1s;
+}
+
+.painter--is-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.painter__photo {
   height: 470px;
   margin-bottom: 31px;
 }

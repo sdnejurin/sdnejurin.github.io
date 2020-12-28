@@ -5,24 +5,28 @@
 
 $(function() {
 	$("#accordion-first").accordion({
-		active: 0,
-		heightStyle: "content"
+		active: false,
+		heightStyle: "content",
+		collapsible: true
 	});
 	$("#accordion-second").accordion({
-		active: 0,
-		heightStyle: "content"
+		active: false,
+		heightStyle: "content",
+		collapsible: true
 	});
 	$("#accordion-third").accordion({
-		active: 0,
+		active: false,
 		heightStyle: "content"
 	});
 	$("#accordion-fourth").accordion({
-		active: 0,
-		heightStyle: "content"
+		active: false,
+		heightStyle: "content",
+		collapsible: true
 	});
 	$("#accordion-fifth").accordion({
-		active: 0,
-		heightStyle: "content"
+		active: false,
+		heightStyle: "content",
+		collapsible: true
 	});
 });
 

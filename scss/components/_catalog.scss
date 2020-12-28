@@ -75,8 +75,18 @@
 }
 
 .painter {
+	max-width: 750px;
+	visibility: hidden;
+	opacity: 0;
+	animation: showBlock 1s;
+	// transition: opacity var(--transition-time), visibility var(--transition-time);
+
+	&--is-active {
+		opacity: 1;
+		visibility: visible;
+	}
+
 	&__photo {
-		max-width: 750px;
 		height: 470px;
 		margin-bottom: 31px;
 	}
