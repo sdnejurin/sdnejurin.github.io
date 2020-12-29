@@ -1,0 +1,144 @@
+.events {
+	margin-bottom: 1090px;
+
+	&__subtitle {
+		margin-bottom: 14px;
+	}
+
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	&__all-events {
+		text-align: center;
+	}
+
+	&__btn {
+		padding: 15px 35px 15px 35px;
+		opacity: 1;
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 25px;
+		border-radius: 100px;
+		border: 2px solid var(--color-amethyst);
+		color: var(--color-amethyst);
+		background-color: transparent;
+		transition: background-color var(--transition-time), color var(--transition-time), border-color var(--transition-time), opacity var(--transition-time);
+
+		&--is-hidden {
+			display: none;
+		}
+
+		&:hover {
+			background-color: var(--color-amethyst);
+			color: var(--color-white);
+		}
+
+		&:active {
+			background-color: var(--color-purple);
+			border-color: var(--color-biloba);
+		}
+
+		&:focus {
+			outline: none;
+		}
+
+		&:focus-visible {
+			background-color: var(--color-amethyst);
+			border-color: var(--color-purple);
+			color: var(--color-white);
+		}
+	}
+}
+
+.events-card {
+	width: 500px;
+	height: 700px;
+	margin-bottom: 51px;
+	border: 1px solid #CACACA;
+	transition: opacity var(--transition-time), visibility var(--transition-time), max-height var(--transition-time);
+
+	&--is-hidden {
+		display: none;
+		animation: showBlock3 1s;
+	}
+
+	&--is-active {
+		display: block;
+	}
+
+	&__img {
+		width: 100%;
+		height: 300px;
+		margin-bottom: 14px;
+	}
+
+	&__text {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		margin: 0 17px 4px 0;
+		font-weight: 600;
+		font-size: 12px;
+		line-height: 16px;
+		color: #999999;
+	}
+
+	&__desc {
+		display: inline-flex;
+		flex-direction: column;
+		align-items: flex-start;
+		height: 348px;
+		padding: 0 45px 41px 50px;
+		font-size: 16px;
+		line-height: 32px;
+	}
+
+	&__subtitle {
+		margin-bottom: 2px;
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 33px;
+	}
+
+	&__par {
+		margin-bottom: auto;
+	}
+
+	&__link {
+		line-height: 26px;
+		color: var(--color-amethyst);
+		outline: 2px solid transparent;
+		border-bottom: 1px solid currentColor;
+		transition: outline-color var(--transition-time), text-shadow var(--transition-time);
+
+		&:hover {
+			text-shadow: currentColor 0 0 5px;
+		}
+
+		&:active {
+			color: var(--color-purple);
+		}
+
+		&:focus-visible {
+			outline-color: var(--color-purple);
+		}
+	}
+}
+
+@keyframes showBlock3 {
+	0% {
+		transform: translateY(-50%);
+		opacity: 0;
+	}
+	50% {
+		transform: translateY(7%);
+		opacity: 0.5;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}

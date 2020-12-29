@@ -27,15 +27,16 @@ document.addEventListener('DOMContentLoaded', () => {
 		datesPainterAll.forEach(el => {
 			el.addEventListener('click', (e) => {
 				let clickedElement = e.target.closest('.dates__painter');
+				let currentPainter = clickedElement.closest('.catalog__bottom').querySelector('.painter');
 				let currentImg = clickedElement.closest('.catalog__bottom').querySelector('.painter__img');
 				let currentSubtitle = clickedElement.closest('.catalog__bottom').querySelector('.painter__subtitle');
 				let currentDate = clickedElement.closest('.catalog__bottom').querySelector('.painter__date');
 				let currentDesc = clickedElement.closest('.catalog__bottom').querySelector('.painter__desc');
 
 				if (clickedElement) {
-
+					currentPainter.classList.toggle('painter--is-active');
 					datesPainterAll.forEach(el => {el.classList.remove('dates__painter--is-active')});
-					clickedElement.classList.add('dates__painter--is-active');
+					clickedElement.classList.toggle('dates__painter--is-active');
 					currentImg.setAttribute('src', e.target.dataset.painterSrc);
 					currentSubtitle.innerHTML = clickedElement.textContent;
 					currentDate.innerHTML = clickedElement.dataset.painterDate;

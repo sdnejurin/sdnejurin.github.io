@@ -1,5 +1,5 @@
 .catalog {
-	margin-bottom: 50px;
+	margin-bottom: 82px;
 
 	&__top {
 		display: flex;
@@ -76,14 +76,10 @@
 
 .painter {
 	max-width: 750px;
-	visibility: hidden;
-	opacity: 0;
-	animation: showBlock 1s;
-	// transition: opacity var(--transition-time), visibility var(--transition-time);
+	animation: showBlock var(--transition-time);
 
 	&--is-active {
-		opacity: 1;
-		visibility: visible;
+		animation: showBlock2 var(--transition-time);
 	}
 
 	&__photo {
@@ -242,6 +238,15 @@
 }
 
 @keyframes showBlock {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes showBlock2 {
 	0% {
 		opacity: 0;
 	}
