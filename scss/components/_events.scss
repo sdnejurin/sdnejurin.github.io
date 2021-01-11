@@ -1,5 +1,5 @@
 .events {
-	margin-bottom: 1090px;
+	margin-bottom: 79px;
 
 	&__subtitle {
 		margin-bottom: 14px;
@@ -60,7 +60,7 @@
 	border: 1px solid #CACACA;
 	transition: opacity var(--transition-time), visibility var(--transition-time), max-height var(--transition-time);
 
-	&--is-hidden {
+	&:nth-child(n+4) {
 		display: none;
 		animation: showBlock3 1s;
 	}
