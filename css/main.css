@@ -2313,6 +2313,10 @@ body {
   background-color: rgba(198, 161, 226, 0.5);
 }
 
+.price__input::-webkit-outer-spin-button, .price__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 .publication__img {
   margin-bottom: 23px;
 }

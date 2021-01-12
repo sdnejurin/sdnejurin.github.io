@@ -160,6 +160,11 @@
 			outline: none;
 			background-color: rgba(198, 161, 226, 0.5);
 		}
+
+		&::-webkit-outer-spin-button,
+		&::-webkit-inner-spin-button {
+			-webkit-appearance: none;
+		}
 	}
 }
 
