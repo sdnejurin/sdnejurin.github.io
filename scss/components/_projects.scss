@@ -1,0 +1,203 @@
+.projects {
+	margin-bottom: 600px;
+	&__subtitle {
+		margin-bottom: 15px;
+	}
+
+	&__text {
+		width: 1080px;
+		margin-bottom: 19px;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 32px;
+		word-wrap: keep-all;
+	}
+
+	&__link {
+		font-weight: 600;
+		outline: 2px solid transparent;
+		color: var(--color-amethyst);
+		transition: outline-color var(--transition-time), text-shadow var(--transition-time), color var(--transition-time);
+
+		&:hover {
+			text-shadow: currentColor 0 0 5px;
+		}
+
+		&:active {
+			color: var(--color-purple);
+		}
+
+		&:focus-visible {
+			outline-color: var(--color-purple);
+		}
+	}
+}
+
+.tooltip {
+	display: inline-block;
+	position: relative;
+
+	&__marker {
+		display: inline-block;
+		width: 16px;
+		height: 16px;
+		outline: 2px solid transparent;
+		border-radius: 50%;
+		transform: translateY(2px);
+		background: url("../img/icons/tooltip.svg") no-repeat;
+		cursor: pointer;
+		transition: outline-color var(--transition-time);
+
+		&:focus-visible {
+			outline-color: var(--color-purple);
+		}
+	}
+
+	&__popup {
+		display: inline-block;
+		position: absolute;
+		bottom: 115%;
+		left: 50%;
+		padding: 8px 8px 11px;
+		width: 264px;
+		font-weight: 600;
+		font-size: 12px;
+		line-height: 16px;
+		text-align: center;
+		background-color: var(--color-silver);
+		color: var(--color-white);
+		transform: translateX(-50%);
+		opacity: 0;
+		visibility: hidden;
+		transition: opacity var(--transition-time), visibility var(--transition-time);
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 100%;
+			left: 50%;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 9px 7px 0 7px;
+			border-color: var(--color-silver) transparent transparent transparent;
+			transform: translateX(-50%);
+		}
+	}
+}
+
+.tooltip__marker:hover + .tooltip__popup,
+.tooltip__marker:focus-visible + .tooltip__popup {
+	opacity: 1;
+	visibility: visible;
+}
+
+.partners {
+	position: relative;
+
+	&__slider {
+		width: 1450px;
+	}
+
+	&__subtitle {
+		margin-bottom: 23px;
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 32px;
+	}
+
+	&__wrapper {
+		display: flex;
+	}
+}
+
+
+.partners-nav {
+	position: absolute;
+	bottom: 28%;
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+
+	&__btn {
+		position: relative;
+		width: 30px;
+		height: 30px;
+		margin: 0;
+		border-radius: 100%;
+		border: 2px solid transparent;
+		outline: 2px solid transparent;
+		background-color: #666;
+		transition: background-color var(--transition-time), border-color var(--transition-time), outline-color var(--transition-time);
+
+		&--prev {
+			left: 0;
+		}
+
+		&--next {
+			right: 0;
+		}
+
+		&:hover {
+			background-color: var(--color-amethyst);
+		}
+
+		&:active {
+			background-color: var(--color-purple);
+			border-color: var(--color-biloba);
+		}
+
+		&--prev {
+			&::after {
+				content: "";
+				position: absolute;
+				top: 0;
+				right: 0;
+				left: 0;
+				bottom: 0;
+				width: 100%;
+				height: 100%;
+				background: url("../img/icons/left-arrow.svg") no-repeat 50% 50%;
+			}
+		}
+
+		&--next {
+			&::after {
+				content: "";
+				position: absolute;
+				top: 0;
+				right: 0;
+				left: 0;
+				bottom: 0;
+				width: 100%;
+				height: 100%;
+				background: url("../img/icons/right-arrow.svg") no-repeat 50% 50%;
+			}
+		}
+	}
+}
+
+.partner {
+	position: relative;
+	height: 148px;
+	outline: 1px solid var(--color-silver);
+	filter: grayscale(100%);
+	transition: filter var(--transition-time);
+
+	&:hover {
+		filter: grayscale(0);
+	}
+
+	&__link {
+		display: inline-block;
+	}
+
+	&__img {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		object-fit: scale-down;
+	}
+}

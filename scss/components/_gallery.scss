@@ -1,7 +1,6 @@
 .gallery {
-	margin-bottom: 80px;
-	padding-top: 85px;
-	padding-bottom: 76px;
+	padding-top: 84px;
+	padding-bottom: 77px;
 	background: url("../img/gallery.jpg") no-repeat 50%;
 	color: var(--color-white);
 
@@ -109,7 +108,7 @@
 	padding-top: 22px;
 
 	&__nav {
-		margin-bottom: 27px;
+		margin-bottom: 32px;
 	}
 }
 
@@ -118,10 +117,11 @@
 	justify-content: space-between;
 	align-items: center;
 	width: 130px;
-	height: 34px;
 
 	&__btn {
 		position: relative;
+		right: 0;
+		left: 0;
 		width: 30px;
 		height: 30px;
 		margin: 0;
