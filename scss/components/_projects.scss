@@ -96,7 +96,8 @@
 	position: relative;
 
 	&__slider {
-		width: 1450px;
+		width: 1500px;
+		padding: 0 25px;
 	}
 
 	&__subtitle {
@@ -128,7 +129,7 @@
 		border-radius: 100%;
 		border: 2px solid transparent;
 		outline: 2px solid transparent;
-		background-color: #666;
+		background-color: #ECECEC;
 		transition: background-color var(--transition-time), border-color var(--transition-time), outline-color var(--transition-time);
 
 		&--prev {
@@ -182,15 +183,17 @@
 	position: relative;
 	height: 148px;
 	outline: 1px solid var(--color-silver);
-	filter: grayscale(100%);
-	transition: filter var(--transition-time);
-
-	&:hover {
-		filter: grayscale(0);
-	}
 
 	&__link {
 		display: inline-block;
+		width: 100%;
+		height: 100%;
+		filter: grayscale(100%);
+		transition: filter var(--transition-time);
+
+		&:hover {
+			filter: grayscale(0);
+		}
 	}
 
 	&__img {
