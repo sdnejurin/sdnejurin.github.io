@@ -2636,6 +2636,10 @@ body {
   line-height: 32px;
 }
 
+.contacts-form__label {
+  position: relative;
+}
+
 .contacts-form__input {
   width: 400px;
   padding: 3px 24px;
@@ -2737,6 +2741,13 @@ body {
 [class*="ground-pane"] {
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
+}
+
+.js-validate-error-label {
+  position: absolute;
+  top: -17px;
+  left: 25px;
+  font-size: 14px;
 }
 
 .footer {

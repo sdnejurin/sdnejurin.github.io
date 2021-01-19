@@ -19,7 +19,9 @@
 		<script defer src="js/jquery-ui.js"></script>
 		<script defer src="js/catalog.js"></script>
 		<script defer src="js/events.js"></script>
-		<script defer src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+		<script defer src="js/just-validate.min.js"></script>
+		<script defer src="js/just-validate-settings.js"></script>
+		<script defer src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
 		<script defer src="js/ymaps.js"></script>
 	</head>
 	<body>
@@ -3399,17 +3401,17 @@
 						<span class="contacts__room-name">Шоурум №4</span>
 						<address class="contacts__address">Леонтьевский переулок, дом 5, строение 1</address>
 
-						<div class="contacts__form contacts-form">
+						<form class="contacts__form contacts-form">
 							<span class="contacts-form__text">Заказать обратный звонок</span>
 
 							<label class="contacts-form__label">
-								<input class="contacts-form__input contacts-form__input--text" type="text" placeholder="Имя*">
+								<input class="contacts-form__input contacts-form__input--text" type="text" placeholder="Имя*" data-validate-field="name">
 							</label>
 							<label class="contacts-form__label">
-								<input class="contacts-form__input contacts-form__input--tel" type="tel" placeholder="Телефон*">
+								<input class="contacts-form__input contacts-form__input--tel" type="tel" placeholder="Телефон*" data-validate-field="tel">
 							</label>
-							<button class="contacts-form__btn btn--reset">Заказать</button>
-						</div>
+							<button type="submit" class="contacts-form__btn btn--reset">Заказать</button>
+						</form>
 
 						<div class="contacts__socials contacts-socials">
 							<span class="contacts-socials__text">Связаться в один клик</span>
