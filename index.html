@@ -19,6 +19,8 @@
 		<script defer src="js/jquery-ui.js"></script>
 		<script defer src="js/catalog.js"></script>
 		<script defer src="js/events.js"></script>
+		<script defer src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+		<script defer src="js/ymaps.js"></script>
 	</head>
 	<body>
 		<header class="header">
@@ -3386,6 +3388,41 @@
 
 				</div>
 			</section>
+
+			<section class="contacts">
+				<div class="container contacts__container">
+					<h2 class="contacts__subtitle main-subtitle">Контакты</h2>
+				</div>
+
+				<div class="contacts__wrapper">
+					<div class="contacts__left">
+						<span class="contacts__room-name">Шоурум №4</span>
+						<address class="contacts__address">Леонтьевский переулок, дом 5, строение 1</address>
+
+						<div class="contacts__form contacts-form">
+							<span class="contacts-form__text">Заказать обратный звонок</span>
+
+							<label class="contacts-form__label">
+								<input class="contacts-form__input contacts-form__input--text" type="text" placeholder="Имя*">
+							</label>
+							<label class="contacts-form__label">
+								<input class="contacts-form__input contacts-form__input--tel" type="tel" placeholder="Телефон*">
+							</label>
+							<button class="contacts-form__btn btn--reset">Заказать</button>
+						</div>
+
+						<div class="contacts__socials contacts-socials">
+							<span class="contacts-socials__text">Связаться в один клик</span>
+
+							<div class="contacts-socials__messengers">
+								<a href="https://wa.me/+7920111111" class="contacts-socials__messenger contacts-socials__messenger--wa"></a>
+								<a href="tg://resolve?domain=blanchard" class="contacts-socials__messenger contacts-socials__messenger--tg"></a>
+							</div>
+						</div>
+					</div>
+					<div class="contacts__right yandex-map"></div>
+				</div>
+			</section>
 		</main>
 
 		<div class="modal">
@@ -3411,6 +3448,20 @@
 			</div>
 		</div>
 
-		<footer></footer>
+		<footer class="footer">
+			<div class="footer__container container">
+				<div class="header-top__logo logo">
+					<svg>
+						<use xlink:href="img/sprite.svg#logo"></use>
+					</svg>
+				</div>
+
+				<div class="footer__socials footer-socials">
+					<a href="#" class="footer-socials__link footer-socials__link--vk"></a>
+					<a href="#" class="footer-socials__link footer-socials__link--inst"></a>
+					<a href="#" class="footer-socials__link footer-socials__link--fb"></a>
+				</div>
+			</div>
+		</footer>
 	</body>
 </html>

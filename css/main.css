@@ -2395,7 +2395,7 @@ body {
 }
 
 .projects {
-  margin-bottom: 600px;
+  margin-bottom: 82px;
 }
 
 .projects__subtitle {
@@ -2579,5 +2579,212 @@ body {
           transform: translate(-50%, -50%);
   -o-object-fit: scale-down;
      object-fit: scale-down;
+}
+
+.contacts__subtitle {
+  margin-bottom: 15px;
+}
+
+.contacts__wrapper {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+}
+
+.contacts__left {
+  padding: 122px 121px 122px 152px;
+  border-top: 1px solid var(--color-silver);
+  border-right: 1px solid var(--color-silver);
+}
+
+.contacts__right {
+  width: 100%;
+}
+
+.contacts__room-name {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.contacts__address {
+  margin-bottom: 35px;
+  font-style: normal;
+}
+
+.contacts-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 38px;
+}
+
+.contacts-form__text {
+  margin-bottom: 16px;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.contacts-form__input {
+  width: 400px;
+  padding: 3px 24px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 32px;
+  border: 1px solid #333333;
+  border-radius: 100px;
+  -webkit-transition: border-color var(--transition-time);
+  transition: border-color var(--transition-time);
+}
+
+.contacts-form__input:focus {
+  outline: none;
+  border-color: var(--color-amethyst);
+}
+
+.contacts-form__input--text {
+  margin-bottom: 23px;
+}
+
+.contacts-form__input--tel {
+  margin-bottom: 22px;
+}
+
+.contacts-form__btn {
+  padding: 15px 35px 15px 32px;
+  opacity: 1;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 100px;
+  border: 2px solid var(--color-amethyst);
+  color: var(--color-amethyst);
+  background-color: transparent;
+  -webkit-transition: background-color var(--transition-time), color var(--transition-time), border-color var(--transition-time), opacity var(--transition-time);
+  transition: background-color var(--transition-time), color var(--transition-time), border-color var(--transition-time), opacity var(--transition-time);
+}
+
+.contacts-form__btn:hover {
+  background-color: var(--color-amethyst);
+  color: var(--color-white);
+}
+
+.contacts-form__btn:active {
+  background-color: var(--color-purple);
+  border-color: var(--color-biloba);
+}
+
+.contacts-form__btn:focus {
+  outline: none;
+}
+
+.contacts-form__btn:focus-visible {
+  background-color: var(--color-amethyst);
+  border-color: var(--color-purple);
+  color: var(--color-white);
+}
+
+.contacts-socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contacts-socials__text {
+  margin-bottom: 15px;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.contacts-socials__messenger {
+  display: inline-block;
+  width: 39px;
+  height: 39px;
+  outline: 2px solid transparent;
+  -webkit-transition: outline-color var(--transition-time);
+  transition: outline-color var(--transition-time);
+}
+
+.contacts-socials__messenger--wa {
+  margin-right: 17px;
+  background: url("../img/icons/whatsapp.svg") no-repeat 50% 50%;
+}
+
+.contacts-socials__messenger--tg {
+  background: url("../img/icons/telegram.svg") no-repeat 50% 50%;
+}
+
+.contacts-socials__messenger:focus-visible {
+  outline-color: var(--color-purple);
+}
+
+[class*="ground-pane"] {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+.footer {
+  padding: 50px 0 43px;
+  background-color: var(--color-black);
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 175px;
+}
+
+.footer-socials__link {
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  outline: 2px solid transparent;
+  -webkit-transition: outline-color var(--transition-time);
+  transition: outline-color var(--transition-time);
+}
+
+.footer-socials__link--vk {
+  background: url("../img/icons/vk.svg") no-repeat 50% 50%;
+}
+
+.footer-socials__link--inst {
+  background: url("../img/icons/instagram.svg") no-repeat 50% 50%;
+}
+
+.footer-socials__link--fb {
+  background: url("../img/icons/fb.svg") no-repeat 50% 50%;
+}
+
+.footer-socials__link:focus-visible {
+  outline-color: var(--color-purple);
 }
 /*# sourceMappingURL=main.css.map */
