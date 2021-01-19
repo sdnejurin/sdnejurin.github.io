@@ -1,0 +1,72 @@
+.hero {
+	margin-bottom: 81px;
+	z-index: 998;
+
+	&__pictures {
+		height: 800px;
+		width: 100%;
+	}
+
+	&__text {
+		position: absolute;
+		top: 242px;
+		right: 0;
+		left: 0;
+		padding-right: 1050px;
+		color: var(--color-white);
+		z-index: 1;
+	}
+
+	&__subtitle {
+		margin-bottom: 18px;
+		font-weight: 700;
+		font-size: 72px;
+		line-height: 83px;
+	}
+
+	&__description {
+		margin-bottom: 92px;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 30px;
+	}
+
+	&__link {
+		display: inline-block;
+		padding: 19px 32px;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 25px;
+		border-radius: 100px;
+		border: 3px solid transparent;
+		background-color: var(--color-amethyst);
+		transition: border-color var(--transition-time), background-color var(--transition-time);
+
+		&:hover {
+			border-color: var(--color-biloba);
+		}
+
+		&:focus-visible {
+			outline: none;
+			border-color: var(--color-purple);
+		}
+
+		&:active {
+			background-color: var(--color-purple);
+		}
+	}
+}
+
+.swiper-slide-active .hero__img {
+	animation: scalling 10s ease-in-out;
+}
+
+.swiper-slide-active[data-swiper-slide-index="0"] img {
+	animation: scalling 7s ease-in-out;
+}
+
+@keyframes scalling {
+	0% {transform: none;}
+	50% {transform: scale(1.1);}
+	100% {transform: none;}
+}
