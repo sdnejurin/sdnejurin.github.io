@@ -24,8 +24,6 @@
 		right: 0;
 		width: 11px;
 		height: 7px;
-		fill: none;
-		stroke: currentColor;
 		transition: stroke var(--transition-time), transform var(--transition-time);
 	}
 
@@ -68,4 +66,10 @@
 
 .svg--rotate {
 	transform: rotate(-180deg);
+}
+
+.arrow {
+	fill: none;
+	stroke: currentColor;
+	transition: stroke var(--transition-time);
 }

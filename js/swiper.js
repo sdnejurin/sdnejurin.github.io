@@ -20,8 +20,8 @@ let mySwiperGallery = new Swiper(slideGallery, {
 	slidesPerGroup: 3,
 	spaceBetween: 50,
 	navigation: {
-    nextEl: '.gallery__btn--next',
-    prevEl: '.gallery__btn--prev',
+    nextEl: '.gallery-nav__btn--next',
+    prevEl: '.gallery-nav__btn--prev',
 	},
 	pagination: {
     el: '.swiper-pagination',

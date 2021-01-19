@@ -131,6 +131,15 @@
 		background-color: #666;
 		transition: background-color var(--transition-time), border-color var(--transition-time), outline-color var(--transition-time);
 
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			right: 0;
+			left: 0;
+			bottom: 0;
+		}
+
 		&:hover {
 			background-color: var(--color-amethyst);
 		}
@@ -141,32 +150,17 @@
 		}
 
 		&--prev {
-			&::after {
-				content: "";
-				position: absolute;
-				top: 0;
-				right: 0;
-				left: 0;
-				bottom: 0;
-				width: 100%;
-				height: 100%;
-				background: url("../img/icons/left-arrow.svg") no-repeat 50% 50%;
-			}
+			transform: rotate(90deg);
 		}
 
 		&--next {
-			&::after {
-				content: "";
-				position: absolute;
-				top: 0;
-				right: 0;
-				left: 0;
-				bottom: 0;
-				width: 100%;
-				height: 100%;
-				background: url("../img/icons/right-arrow.svg") no-repeat 50% 50%;
-			}
+			transform: rotate(-90deg);
 		}
+	}
+
+	&__svg {
+		width: 13px;
+		height: 13px;
 	}
 }
 
@@ -181,4 +175,8 @@
 
 .swiper-pagination {
 	position: static;
+}
+
+.swiper-button-disabled {
+	opacity: 1 !important;
 }
