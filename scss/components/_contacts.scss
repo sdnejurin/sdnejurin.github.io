@@ -9,7 +9,8 @@
 	}
 
 	&__left {
-		padding: 122px 121px 122px 152px;
+		padding: 122px 121px 125px 0;
+		padding-left: calc(50% - 800px);
 		border-top: 1px solid var(--color-silver);
 		border-right: 1px solid var(--color-silver);
 	}
@@ -119,20 +120,28 @@
 		line-height: 32px;
 	}
 
+	&__messengers {
+		display: flex;
+	}
+
 	&__messenger {
 		display: inline-block;
 		width: 39px;
 		height: 39px;
 		outline: 2px solid transparent;
-		transition: outline-color var(--transition-time);
+		transition: outline-color var(--transition-time), filter var(--transition-time);
 
 		&--wa {
-			margin-right: 17px;
+			margin-right: 21px;
 			background: url("../img/icons/whatsapp.svg") no-repeat 50% 50%;
 		}
 
 		&--tg {
 			background: url("../img/icons/telegram.svg") no-repeat 50% 50%;
+		}
+
+		&:hover {
+			filter: drop-shadow(0 0 8px rgba(157, 92, 208, 0.7));
 		}
 
 		&:focus-visible {

@@ -21,7 +21,7 @@
 		<script defer src="js/events.js"></script>
 		<script defer src="js/just-validate.min.js"></script>
 		<script defer src="js/just-validate-settings.js"></script>
-		<script defer src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
+		<script defer src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script>
 		<script defer src="js/ymaps.js"></script>
 	</head>
 	<body>
@@ -3435,7 +3435,7 @@
 					</div>
 
 					<div class="modal__text modal-text">
-						<h3 class="modal-text__subtitle"></h3>
+						<div class="modal-text__subtitle"></div>
 						<span class="modal-text__name"></span>
 						<span class="modal-text__date"></span>
 						<p class="modal-text__desc"></p>
@@ -3459,9 +3459,17 @@
 				</div>
 
 				<div class="footer__socials footer-socials">
-					<a href="#" class="footer-socials__link footer-socials__link--vk"></a>
-					<a href="#" class="footer-socials__link footer-socials__link--inst"></a>
-					<a href="#" class="footer-socials__link footer-socials__link--fb"></a>
+					<ul class="footer-socials__list">
+						<li class="footer-socials__item">
+							<a href="#" class="footer-socials__link footer-socials__link--vk"></a>
+						</li>
+						<li class="footer-socials__item">
+							<a href="#" class="footer-socials__link footer-socials__link--inst"></a>
+						</li>
+						<li class="footer-socials__item">
+							<a href="#" class="footer-socials__link footer-socials__link--fb"></a>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</footer>

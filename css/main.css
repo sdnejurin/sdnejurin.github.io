@@ -1628,12 +1628,19 @@ body {
   height: 66px;
   border: 2px solid transparent;
   border-radius: 100%;
-  -webkit-transition: border-color var(--transition-time);
-  transition: border-color var(--transition-time);
+  -webkit-transition: border-color var(--transition-time), -webkit-filter var(--transition-time);
+  transition: border-color var(--transition-time), -webkit-filter var(--transition-time);
+  transition: border-color var(--transition-time), filter var(--transition-time);
+  transition: border-color var(--transition-time), filter var(--transition-time), -webkit-filter var(--transition-time);
 }
 
 .catalog__btn--focused {
   border-color: var(--color-amethyst);
+}
+
+.catalog__btn:hover {
+  -webkit-filter: drop-shadow(0 0 8px rgba(157, 92, 208, 0.7));
+          filter: drop-shadow(0 0 8px rgba(157, 92, 208, 0.7));
 }
 
 .catalog__btn:focus {
@@ -2593,7 +2600,8 @@ body {
 }
 
 .contacts__left {
-  padding: 122px 121px 122px 152px;
+  padding: 122px 121px 125px 0;
+  padding-left: calc(50% - 800px);
   border-top: 1px solid var(--color-silver);
   border-right: 1px solid var(--color-silver);
 }
@@ -2716,22 +2724,35 @@ body {
   line-height: 32px;
 }
 
+.contacts-socials__messengers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .contacts-socials__messenger {
   display: inline-block;
   width: 39px;
   height: 39px;
   outline: 2px solid transparent;
-  -webkit-transition: outline-color var(--transition-time);
-  transition: outline-color var(--transition-time);
+  -webkit-transition: outline-color var(--transition-time), -webkit-filter var(--transition-time);
+  transition: outline-color var(--transition-time), -webkit-filter var(--transition-time);
+  transition: outline-color var(--transition-time), filter var(--transition-time);
+  transition: outline-color var(--transition-time), filter var(--transition-time), -webkit-filter var(--transition-time);
 }
 
 .contacts-socials__messenger--wa {
-  margin-right: 17px;
+  margin-right: 21px;
   background: url("../img/icons/whatsapp.svg") no-repeat 50% 50%;
 }
 
 .contacts-socials__messenger--tg {
   background: url("../img/icons/telegram.svg") no-repeat 50% 50%;
+}
+
+.contacts-socials__messenger:hover {
+  -webkit-filter: drop-shadow(0 0 8px rgba(157, 92, 208, 0.7));
+          filter: drop-shadow(0 0 8px rgba(157, 92, 208, 0.7));
 }
 
 .contacts-socials__messenger:focus-visible {
@@ -2764,14 +2785,10 @@ body {
           justify-content: space-between;
 }
 
-.footer-socials {
+.footer-socials__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 175px;
 }
 
 .footer-socials__link {
@@ -2779,20 +2796,29 @@ body {
   width: 46px;
   height: 46px;
   outline: 2px solid transparent;
-  -webkit-transition: outline-color var(--transition-time);
-  transition: outline-color var(--transition-time);
+  -webkit-transition: outline-color var(--transition-time), -webkit-filter var(--transition-time);
+  transition: outline-color var(--transition-time), -webkit-filter var(--transition-time);
+  transition: outline-color var(--transition-time), filter var(--transition-time);
+  transition: outline-color var(--transition-time), filter var(--transition-time), -webkit-filter var(--transition-time);
 }
 
 .footer-socials__link--vk {
+  margin-right: 18px;
   background: url("../img/icons/vk.svg") no-repeat 50% 50%;
 }
 
 .footer-socials__link--inst {
+  margin-right: 18px;
   background: url("../img/icons/instagram.svg") no-repeat 50% 50%;
 }
 
 .footer-socials__link--fb {
   background: url("../img/icons/fb.svg") no-repeat 50% 50%;
+}
+
+.footer-socials__link:hover {
+  -webkit-filter: drop-shadow(0 0 8px #9d5cd0);
+          filter: drop-shadow(0 0 8px #9d5cd0);
 }
 
 .footer-socials__link:focus-visible {

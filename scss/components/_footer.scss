@@ -9,27 +9,33 @@
 }
 
 .footer-socials {
-	display: flex;
-	justify-content: space-between;
-	width: 175px;
+	&__list {
+		display: flex;
+	}
 
 	&__link {
 		display: inline-block;
 		width: 46px;
 		height: 46px;
 		outline: 2px solid transparent;
-		transition: outline-color var(--transition-time);
+		transition: outline-color var(--transition-time), filter var(--transition-time);
 
 		&--vk {
+			margin-right: 18px;
 			background: url("../img/icons/vk.svg") no-repeat 50% 50%;
 		}
 
 		&--inst {
+			margin-right: 18px;
 			background: url("../img/icons/instagram.svg") no-repeat 50% 50%;
 		}
 
 		&--fb {
 			background: url("../img/icons/fb.svg") no-repeat 50% 50%;
+		}
+
+		&:hover {
+			filter: drop-shadow(0 0 8px rgba(157, 92, 208, 1));
 		}
 
 		&:focus-visible {

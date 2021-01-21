@@ -17,10 +17,14 @@
 		height: 66px;
 		border: 2px solid transparent;
 		border-radius: 100%;
-		transition: border-color var(--transition-time);
+		transition: border-color var(--transition-time), filter var(--transition-time);
 
 		&--focused {
 			border-color: var(--color-amethyst);
+		}
+
+		&:hover {
+			filter: drop-shadow(0 0 8px rgba(157, 92, 208, 0.7));
 		}
 
 		&:focus {
