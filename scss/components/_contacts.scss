@@ -10,7 +10,7 @@
 
 	&__left {
 		padding: 122px 121px 125px 0;
-		padding-left: calc(50% - 800px);
+		padding-left: calc((100% - 1600px) / 2);
 		border-top: 1px solid var(--color-silver);
 		border-right: 1px solid var(--color-silver);
 	}
@@ -134,10 +134,12 @@
 		&--wa {
 			margin-right: 21px;
 			background: url("../img/icons/whatsapp.svg") no-repeat 50% 50%;
+			background-size: 100%;
 		}
 
 		&--tg {
 			background: url("../img/icons/telegram.svg") no-repeat 50% 50%;
+			background-size: 100%;
 		}
 
 		&:hover {
