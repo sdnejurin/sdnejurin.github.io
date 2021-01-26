@@ -24,7 +24,6 @@
 		right: 0;
 		width: 11px;
 		height: 7px;
-		transition: stroke var(--transition-time), transform var(--transition-time);
 	}
 
 	&__link {
@@ -71,5 +70,5 @@
 .arrow {
 	fill: none;
 	stroke: currentColor;
-	transition: stroke var(--transition-time);
+	transition: stroke var(--transition-time), transform var(--transition-time);
 }

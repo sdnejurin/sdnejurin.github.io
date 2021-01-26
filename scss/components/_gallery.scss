@@ -6,7 +6,6 @@
 
 	&__container {
 		display: flex;
-		justify-content: space-between;
 	}
 
 	&__form {
@@ -29,8 +28,11 @@
 			position: absolute;
 			top: 7.5%;
 			left: 7.5%;
-			width: 300px;
-			height: 300px;
+			right: 7.5%;
+			// width: 300px;
+			// height: 300px;
+			width: 86%;
+			height: 86%;
 			background: url("../img/icons/loupe.svg") no-repeat 50%;
 			background-color: rgba(0, 0, 0, 0.5);
 			opacity: 0;
@@ -100,11 +102,12 @@
 .gallery-left-column {
 	display: flex;
 	flex-direction: column;
-	width: 400px;
+	width: 27.9%;
+	margin-right: 46px;
 }
 
 .gallery-right-column {
-	width: 1154px;
+	width: 72.1%;
 	padding-top: 22px;
 
 	&__nav {

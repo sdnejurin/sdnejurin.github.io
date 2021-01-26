@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		button.addEventListener('click', function() {
 			hiddenCards.forEach(el => {
-				el.style.display = 'block';
+				el.style.display = 'inline-flex';
 			});
 			button.style.display = 'none';
 		});

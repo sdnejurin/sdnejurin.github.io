@@ -75,12 +75,12 @@
 
 	&__bottom {
 		display: flex;
-		justify-content: space-between;
 	}
 }
 
 .painter {
 	max-width: 750px;
+	margin-right: 50px;
 	animation: showBlock var(--transition-time);
 
 	&--is-active {

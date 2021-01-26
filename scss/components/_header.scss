@@ -22,7 +22,7 @@ body {
 	background-color: var(--color-black);
 
 	&__logo {
-		margin-right: 180px;
+		margin-right: calc((100% - 1240px) / 2);
 	}
 }
 

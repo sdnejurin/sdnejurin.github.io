@@ -1,8 +1,14 @@
-// @mixin desktop {
-// 	@media (min-width: (1025px)) {
-// 		@content;
-// 	}
-// }
+@mixin desktop {
+	@media (min-width: (1025px)) {
+		@content;
+	}
+}
+
+@mixin lg {
+	@media (max-width: (1366px)) {
+		@content;
+	}
+}
 
 // @mixin desktop {
 // 	@media (max-width: (1024px)) {

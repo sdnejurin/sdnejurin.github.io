@@ -18,7 +18,7 @@ let mySwiperGallery = new Swiper(slideGallery, {
 	slidesPerColumn: 2,
 	slidesPerColumnFill: 'row',
 	slidesPerGroup: 3,
-	spaceBetween: 50,
+	spaceBetween: 25,
 	navigation: {
     nextEl: '.gallery-nav__btn--next',
     prevEl: '.gallery-nav__btn--prev',
@@ -26,13 +26,22 @@ let mySwiperGallery = new Swiper(slideGallery, {
 	pagination: {
     el: '.swiper-pagination',
     type: 'fraction',
-  },
+	},
+	breakpoints: {
+		1500: {
+			spaceBetween: 50,
+			slidesPerView: 3,
+			slidesPerColumn: 2,
+			slidesPerColumnFill: 'row',
+			slidesPerGroup: 3,
+		},
+	},
 });
 
 let mySwiperPublications = new Swiper(slidePublications, {
 	slidesPerView: 3,
 	slidesPerGroup: 3,
-	spaceBetween: 50,
+	spaceBetween: 25,
 	navigation: {
     nextEl: '.publications-nav__btn--next',
     prevEl: '.publications-nav__btn--prev',
@@ -40,7 +49,12 @@ let mySwiperPublications = new Swiper(slidePublications, {
 	pagination: {
     el: '.swiper-pagination',
     type: 'fraction',
-  },
+	},
+	breakpoints: {
+		1500: {
+			spaceBetween: 50,
+		},
+	},
 });
 
 let mySwiperProjects = new Swiper(slideProjects, {
