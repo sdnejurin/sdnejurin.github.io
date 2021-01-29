@@ -3,6 +3,9 @@
 ymaps.ready(init);
 function init(){
 	// Создание карты.
+	var widthMap = document.querySelector('.yandex-map').offsetWidth;
+	console.log(widthMap);
+
 	var myMap = new ymaps.Map(document.querySelector('.yandex-map'), {
 			// Координаты центра карты.
 			// Порядок по умолчанию: «широта, долгота».
@@ -26,4 +29,9 @@ function init(){
 
 	myMap.geoObjects.add(myPlacemark);
 	myMap.controls.remove('default');
+
+	if (screen.width <= 1366) {
+		myMap.behaviors.disable('scrollZoom');
+		myMap.behaviors.disable('drag');
+	}
 }
