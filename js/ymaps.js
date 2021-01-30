@@ -3,8 +3,6 @@
 ymaps.ready(init);
 function init(){
 	// Создание карты.
-	var widthMap = document.querySelector('.yandex-map').offsetWidth;
-	console.log(widthMap);
 
 	var myMap = new ymaps.Map(document.querySelector('.yandex-map'), {
 			// Координаты центра карты.
@@ -14,7 +12,7 @@ function init(){
 			center: [55.762,37.6451],
 			// Уровень масштабирования. Допустимые значения:
 			// от 0 (весь мир) до 19.
-			zoom: 14
+			zoom: 14,
 	});
 
 
@@ -30,7 +28,7 @@ function init(){
 	myMap.geoObjects.add(myPlacemark);
 	myMap.controls.remove('default');
 
-	if (screen.width <= 1366) {
+	if (window.innerWidth <= 1024) {
 		myMap.behaviors.disable('scrollZoom');
 		myMap.behaviors.disable('drag');
 	}
