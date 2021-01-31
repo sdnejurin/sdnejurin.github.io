@@ -28,6 +28,22 @@ function init(){
 	myMap.geoObjects.add(myPlacemark);
 	myMap.controls.remove('default');
 
+	if (window.innerWidth <= 1920) {
+		myMap.setCenter([55.762,37.6451]);
+	}
+
+	if (window.innerWidth <= 1800) {
+		myMap.setCenter([55.762,37.637]);
+	}
+
+	if (window.innerWidth <= 1550) {
+		myMap.setCenter([55.762,37.632]);
+	}
+
+	if (window.innerWidth <= 1300) {
+		myMap.setCenter([55.762,37.625]);
+	}
+
 	if (window.innerWidth <= 1024) {
 		myMap.behaviors.disable('scrollZoom');
 		myMap.behaviors.disable('drag');

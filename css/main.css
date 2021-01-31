@@ -1091,12 +1091,13 @@ body {
 }
 
 .hero {
+  position: relative;
+  width: 100%;
   margin-bottom: 81px;
   z-index: 998;
 }
 
-.hero__pictures {
-  height: 800px;
+.hero__img {
   width: 100%;
 }
 
@@ -1105,9 +1106,15 @@ body {
   top: 242px;
   right: 0;
   left: 0;
-  padding-right: 55.2%;
+  padding-right: 55%;
   color: var(--color-white);
   z-index: 1;
+}
+
+@media (min-width: 1921px) {
+  .hero__text {
+    padding-right: 1050px;
+  }
 }
 
 .hero__subtitle {
@@ -1148,6 +1155,10 @@ body {
 
 .hero__link:active {
   background-color: var(--color-purple);
+}
+
+.swiper-container-hero {
+  height: 800px;
 }
 
 .swiper-slide-active .hero__img {
@@ -2609,6 +2620,7 @@ body {
 
 .contacts__right {
   width: 64.6%;
+  min-height: 700px;
 }
 
 .contacts__room-name {
