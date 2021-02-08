@@ -1,17 +1,37 @@
 .projects {
-	margin-bottom: 82px;
+	padding-top: 81px;
+	margin-bottom: 81px;
+
+	@include xs {
+		padding-top: 51px;
+		margin-bottom: 51px;
+	}
 
 	&__subtitle {
 		margin-bottom: 15px;
+
+		@include xs {
+			margin-bottom: 11px;
+		}
 	}
 
 	&__text {
-		width: 1080px;
-		margin-bottom: 19px;
+		max-width: 1080px;
+		margin-bottom: 20px;
 		font-weight: normal;
 		font-size: 16px;
 		line-height: 32px;
 		word-wrap: keep-all;
+
+		@include sm {
+			padding-right: 10px;
+			margin-bottom: 26px;
+		}
+
+		@include xs {
+			padding-right: 0;
+			margin-bottom: 10px;
+		}
 	}
 
 	&__link {
@@ -19,6 +39,10 @@
 		outline: 2px solid transparent;
 		color: var(--color-amethyst);
 		transition: outline-color var(--transition-time), text-shadow var(--transition-time), color var(--transition-time);
+
+		@include sm {
+			display: inline-block;
+		}
 
 		&:hover {
 			text-shadow: currentColor 0 0 5px;
@@ -99,6 +123,10 @@
 	&__slider {
 		width: 93.8%;
 		padding: 1px 25px;
+
+		@include xs {
+			padding: 1px 40px;
+		}
 	}
 
 	&__subtitle {
@@ -106,6 +134,15 @@
 		font-weight: 600;
 		font-size: 24px;
 		line-height: 32px;
+
+		@include sm {
+			margin-bottom: 29px;
+		}
+
+		@include xs {
+			margin-bottom: 11px;
+			font-size: 18px;
+		}
 	}
 
 	&__wrapper {
@@ -121,6 +158,10 @@
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
+
+	@include xs {
+		bottom: 17%;
+	}
 
 	&__btn {
 		background-color: #ECECEC;
@@ -144,6 +185,18 @@
 	height: 148px;
 	outline: 1px solid var(--color-silver);
 
+	@include lg {
+		height: 126px;
+	}
+
+	@include sm {
+		height: 104px;
+	}
+
+	@include xs {
+		height: 63px;
+	}
+
 	&__link {
 		display: inline-block;
 		width: 100%;
@@ -162,5 +215,10 @@
 		left: 50%;
 		transform: translate(-50%, -50%);
 		object-fit: scale-down;
+
+		@include xs {
+			width: 105px;
+			height: 25px;
+		}
 	}
 }

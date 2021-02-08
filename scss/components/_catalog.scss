@@ -1,26 +1,75 @@
 .catalog {
-	padding-top: 79px;
-	margin-bottom: 82px;
+	padding-top: 81px;
+	margin-bottom: 30px;
+
+	@include sm {
+		margin-bottom: 71px;
+	}
+
+	@include xs {
+		margin-bottom: 52px;
+	}
 
 	&__top {
 		display: flex;
 		align-items: center;
-		margin-bottom: 12px;
+		margin-bottom: 14px;
+
+		@include xs {
+			align-items: flex-start;
+			flex-direction: column;
+		}
 	}
 
 	&__subtitle {
-		margin-right: 30px;
+		margin-right: 40px;
+
+		@include xs {
+			margin-bottom: 11px;
+		}
+	}
+
+	&__btns {
+		display: flex;
+
+		@include sm {
+			width: 100%;
+			margin-bottom: 6px;
+			justify-content: space-between;
+		}
 	}
 
 	&__btn {
-		width: 66px;
-		height: 66px;
-		border: 2px solid transparent;
-		border-radius: 100%;
-		transition: border-color var(--transition-time), filter var(--transition-time);
+		position: relative;
+		width: 46px;
+		height: 46px;
+		background-size: 100%;
+		transition: filter var(--transition-time);
+
+		@include xs {
+			width: 32px;
+			height: 32px;
+		}
 
 		&--focused {
-			border-color: var(--color-amethyst);
+			&::after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				transform: translateX(-10px) translateY(-10px);
+				width: 66px;
+				height: 66px;
+				background-color: transparent;
+				border: 2px solid var(--color-amethyst);
+				border-radius: 100%;
+
+				@include xs {
+					width: 44px;
+					height: 44px;
+					transform: translateX(-6px) translateY(-6px);
+				}
+			}
 		}
 
 		&:hover {
@@ -36,52 +85,102 @@
 		}
 
 		&:not(:last-child) {
-			margin-right: 26px;
+			margin-right: 50px;
+
+			@include sm {
+				margin-right: 0;
+			}
 		}
 
 		&--fr {
 			background: url("../img/icons/catalog-fr.png") no-repeat 50% 50%;
-			background-size: 46px;
+
+			@include xs {
+				background-size: 32px;
+			}
 		}
 
 		&--ge {
 			background: url("../img/icons/catalog-ge.png") no-repeat 50% 50%;
-			background-size: 46px;
+
+			@include xs {
+				background-size: 32px;
+			}
 		}
 
 		&--it {
 			background: url("../img/icons/catalog-it.png") no-repeat 50% 50%;
-			background-size: 46px;
+
+			@include xs {
+				background-size: 32px;
+			}
 		}
 
 		&--ru {
 			background: url("../img/icons/catalog-ru.png") no-repeat 50% 50%;
-			background-size: 46px;
+
+			@include xs {
+				background-size: 32px;
+			}
 		}
 
 		&--bl {
 			background: url("../img/icons/catalog-bl.png") no-repeat 50% 50%;
-			background-size: 46px;
+
+			@include xs {
+				background-size: 32px;
+			}
 		}
 	}
 
 	&__middle {
 		width: 68%;
-		margin-bottom: 39px;
+		margin-bottom: 40px;
 		font-weight: normal;
 		font-size: 16px;
 		line-height: 32px;
+
+		@include lg {
+			width: 100%;
+		}
+
+		@include sm {
+			margin-bottom: 20px;
+		}
+
+		@include xs {
+			display: none;
+		}
 	}
 
 	&__bottom {
 		display: flex;
+
+		@include sm {
+			flex-direction: column;
+		}
 	}
 }
 
 .painter {
 	max-width: 750px;
+	width: 100%;
 	margin-right: 50px;
 	animation: showBlock var(--transition-time);
+
+	@include lg {
+		margin-right: 50px;
+	}
+
+	@include sm {
+		width: 100%;
+		margin-right: 0;
+		order: 2;
+	}
+
+	@include xs {
+		width: 100%;
+	}
 
 	&--is-active {
 		animation: showBlock2 var(--transition-time);
@@ -90,6 +189,26 @@
 	&__photo {
 		height: 470px;
 		margin-bottom: 31px;
+
+		@include md {
+			height: 274px;
+		}
+
+		@include sm {
+			width: 100%;
+			height: 419px;
+		}
+
+		@include xs {
+			width: 100%;
+			height: 181px;
+			margin-bottom: 21px;
+		}
+	}
+
+	&__img {
+		width: 100%;
+		height: 100%;
 	}
 
 	&__subtitle {
@@ -97,6 +216,10 @@
 		font-weight: 600;
 		font-size: 24px;
 		line-height: 33px;
+
+		@include xs {
+			margin-bottom: 10px;
+		}
 	}
 
 	&__date {
@@ -110,11 +233,21 @@
 
 	&__desc {
 		line-height: 32px;
+
+		@include xs {
+			padding-right: 3px;
+		}
 	}
 }
 
 .dates {
-	width: 800px;
+	width: 100%;
+	margin-bottom: 52px;
+
+	@include sm {
+		order: 1;
+		margin-bottom: 51px;
+	}
 
 	&__subtitle {
 		display: flex;
@@ -128,6 +261,12 @@
 		border-bottom: 1px solid transparent;
 		cursor: pointer;
 		transition: border-color var(--transition-time);
+
+		@include xs {
+			padding: 20px 0;
+			font-size: 18px;
+			line-height: 32px;
+		}
 
 		&--last {
 			border-color: #CACACA;
@@ -159,6 +298,12 @@
 		transform: translateY(-6px);
 		transition: border-color var(--transition-time), background-color var(--transition-time);
 
+		@include xs {
+			width: 30px;
+			height: 30px;
+			transform: translateY(0);
+		}
+
 		&:focus {
 			outline: none;
 		}
@@ -184,6 +329,11 @@
 		width: 24px;
 		height: 12px;
 		transition: transform var(--transition-time), stroke var(--transition-time);
+
+		@include xs {
+			width: 14px;
+			height: 7px;
+		}
 	}
 
 	&__columns {
@@ -195,22 +345,44 @@
 		border-top: 1px solid transparent;
 		border-bottom: 1px solid transparent;
 		transition: border-color var(--transition-time);
+
+		@include xs {
+			padding: 18px 0;
+		}
 	}
 
 	&__column {
 		display: flex;
 		flex-direction: column;
-		width: 208px;
+		flex-wrap: wrap;
+		align-content: space-between;
+		width: 100%;
+		height: 288px;
+		padding-right: 9.4%;
 
-		&:not(:last-child) {
-			margin-right: 50px;
+		@include lg-max {
+			height: 385px;
+			padding-right: 0;
+		}
+
+		@include sm {
+			height: 288px;
+		}
+
+		@include xs {
+			height: 100%;
 		}
 	}
 
 	&__painter {
+		width: 208px;
 		outline: 2px solid transparent;
 		cursor: pointer;
 		transition: outline var(--transition-time), color var(--transition-time), text-shadow var(--transition-time);
+
+		@include md {
+			width: auto;
+		}
 
 		&:hover {
 			color: var(--color-amethyst);
@@ -272,4 +444,8 @@
 
 .ui-accordion-content-active {
 	border-color: var(--color-amethyst);
+}
+
+.catalog__btn--focused::after {
+	opacity: 1;
 }

@@ -1,8 +1,16 @@
 .about-us {
-	margin-bottom: 66px;
+	margin-bottom: 69px;
+
+	@include xs {
+		margin-bottom: 41px;
+	}
 
 	&__subtitle {
 		margin-bottom: 16px;
+
+		@include xs {
+			margin-bottom: 11px;
+		}
 	}
 
 	&__text {
@@ -10,6 +18,15 @@
 		font-weight: normal;
 		font-size: 16px;
 		line-height: 32px;
+
+		@include lg {
+			padding-right: 0;
+		}
+
+		@include xs {
+			font-size: 14px;
+			line-height: 28px;
+		}
 	}
 }
 
@@ -17,4 +34,9 @@
 	font-weight: normal;
 	font-size: 48px;
 	line-height: 65px;
+
+	@include xs {
+		font-size: 28px;
+		line-height: 38px;
+	}
 }

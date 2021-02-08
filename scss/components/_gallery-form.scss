@@ -11,5 +11,9 @@
 		font-weight: 600;
 		font-size: 16px;
 		line-height: 32px;
+
+		@include xs {
+			margin-bottom: 5px;
+		}
 	}
 }

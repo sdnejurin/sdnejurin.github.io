@@ -11,18 +11,23 @@ body {
 	height: 170px;
 	z-index: 999;
 
+	@include md {
+		height: 100px;
+	}
+
+	@include xs {
+		height: 45px;
+	}
+
 	&__container {
 		display: flex;
+		justify-content: space-between;
 		align-items: center;
-	}
-}
 
-.header-top {
-	padding: 30px 0 30px;
-	background-color: var(--color-black);
-
-	&__logo {
-		margin-right: calc((100% - 1240px) / 2);
+		@include xs {
+			padding-top: 11px;
+			padding-bottom: 11px;
+		}
 	}
 }
 
@@ -36,6 +41,30 @@ body {
 	}
 }
 
+.header-top {
+	width: 100%;
+	padding: 30px 0 30px;
+	background-color: var(--color-black);
+
+	@include xs {
+		padding: 0;
+		height: 100%;
+	}
+
+	&__logo {
+		@include md {
+			width: 190px;
+			height: 42px;
+			order: 2;
+		}
+
+		@include xs {
+			width: 97px;
+			height: 22px;
+		}
+	}
+}
+
 .login-btn {
 	position: relative;
 	padding-left: 20px;
@@ -45,6 +74,10 @@ body {
 	color: var(--color-white);
 	outline: 2px solid transparent;
 	transition: color var(--transition-time), outline var(--transition-time);
+
+	@include md {
+		display: none;
+	}
 
 	&:hover {
 		color: var(--color-heliotrope);
@@ -77,11 +110,48 @@ body {
 	fill: var(--color-amethyst);
 }
 
+.search-btn {
+	display: none;
+	width: 30px;
+	height: 30px;
+	fill: var(--color-white);
+	outline: 2px solid transparent;
+	transition: fill var(--transition-time), outline-color var(--transition-time);
+
+	@include xs {
+		width: 17px;
+		height: 17px;
+		padding: 0;
+	}
+
+	&:hover {
+		fill: var(--color-heliotrope);
+	}
+
+	&:focus-visible {
+		outline-color: var(--color-purple);
+	}
+
+	&:active {
+		fill: var(--color-amethyst);
+	}
+
+	@include md {
+		display: block;
+		order: 3;
+	}
+}
+
 .header-bottom {
 	background: rgba(0, 0, 0, 0.4);
 
+	@include md {
+		display: none;
+	}
+
 	&__container {
 		display: flex;
+		justify-content: space-between;
 		align-items: center;
 	}
 }
@@ -91,6 +161,10 @@ body {
 	width: 251px;
 	outline: 2px solid transparent;
 	transition: outline-color var(--transition-time);
+
+	@include lg {
+		width: 200px;
+	}
 
 
 	&__input {
@@ -103,6 +177,10 @@ body {
 		background-color: transparent;
 		border-bottom: 1px solid rgba(255, 255, 255, 0.85);
 		transition: border-color var(--transition-time);
+
+		@include lg {
+			width: 160px;
+		}
 
 		&::placeholder {
 			color: rgba(255, 255, 255, 0.85);

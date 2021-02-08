@@ -1,9 +1,12 @@
 .hero {
 	position: relative;
 	width: 100%;
-
 	margin-bottom: 81px;
 	z-index: 998;
+
+	@include xs {
+		margin-bottom: 51px;
+	}
 
 	&__img {
 		width: 100%;
@@ -14,12 +17,29 @@
 		top: 242px;
 		right: 0;
 		left: 0;
-		padding-right: 55%;
+		padding-right: 54%;
 		color: var(--color-white);
 		z-index: 1;
 
-		@include desktop {
+		@include desktop-max {
 			padding-right: 1050px;
+		}
+
+		@include lg {
+			padding-right: 340px;
+		}
+
+		@include md {
+			top: 215px;
+			padding-right: 50px;
+		}
+
+		@include xs {
+			top: 45px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 35px 29px;
 		}
 	}
 
@@ -28,6 +48,30 @@
 		font-weight: 700;
 		font-size: 72px;
 		line-height: 83px;
+
+		@include lg {
+			padding-right: 100px;
+		}
+
+		@include md {
+			padding-right: 38.5%;
+			margin-bottom: 10px;
+		}
+
+		@include sm {
+			display: inline-block;
+			width: 92%;
+			padding-right: 50px;
+		}
+
+		@include xs {
+			width: 100%;
+			padding-right: 0;
+			font-size: 32px;
+			line-height: 36px;
+			text-align: center;
+			margin-bottom: 12px;
+		}
 	}
 
 	&__description {
@@ -35,6 +79,23 @@
 		font-weight: 700;
 		font-size: 18px;
 		line-height: 30px;
+
+		@include md {
+			margin-bottom: 133px;
+			padding-right: 25%;
+		}
+
+		@include sm {
+			padding-right: 0;
+		}
+
+		@include xs {
+			font-weight: normal;
+			font-size: 12px;
+			line-height: 16px;
+			text-align: center;
+			margin-bottom: 42px;
+		}
 	}
 
 	&__link {
@@ -47,6 +108,13 @@
 		border: 3px solid transparent;
 		background-color: var(--color-amethyst);
 		transition: border-color var(--transition-time), background-color var(--transition-time);
+
+		@include xs {
+			padding: 9px 15px;
+			font-size: 12px;
+			line-height: 16px;
+			text-align: center;
+		}
 
 		&:hover {
 			border-color: var(--color-biloba);
@@ -65,6 +133,14 @@
 
 .swiper-container-hero {
 	height: 800px;
+
+	@include md {
+		height: 768px;
+	}
+
+	@include xs {
+		height: 355px;
+	}
 }
 
 .swiper-slide-active .hero__img {

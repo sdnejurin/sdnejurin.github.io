@@ -1,5 +1,4 @@
 .nav-bottom {
-	margin-right: auto;
 	padding: 23px 0 21.5px;
 	font-size: 18px;
 	line-height: 25px;
@@ -15,6 +14,10 @@
 
 		&:not(:last-child) {
 			margin-right: 98px;
+
+			@include lg {
+				margin-right: 25px;
+			}
 		}
 	}
 

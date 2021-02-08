@@ -120,4 +120,8 @@
 	display: none;
 } */
 
+.is-selected {
+	display: none;
+}
+
 /* =====  End of Choices  ====== */

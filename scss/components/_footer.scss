@@ -1,16 +1,49 @@
 .footer {
-	padding: 50px 0 40px;
+	padding: 45px 0 46px;
 	background-color: var(--color-black);
+
+	@include lg {
+		padding: 38px 0 39px;
+	}
+
+	@include xs {
+		padding: 20px 0 10px;
+	}
 
 	&__container {
 		display: flex;
+		align-items: center;
 		justify-content: space-between;
+
+		@include xs {
+			flex-direction: column-reverse;
+		}
+	}
+
+	&__logo	{
+		@include xs {
+			width: 97px;
+		}
 	}
 }
 
 .footer-socials {
+	@include xs {
+		margin-bottom: 8px;
+	}
+
 	&__list {
 		display: flex;
+	}
+
+	&__item {
+		&:not(:last-child) {
+			margin-right: 18px;
+
+			@include lg {
+				margin-right: 30px;
+			}
+		}
 	}
 
 	&__link {
@@ -20,18 +53,29 @@
 		outline: 2px solid transparent;
 		transition: outline-color var(--transition-time), filter var(--transition-time);
 
+		@include lg {
+			width: 60px;
+			height: 60px;
+
+			@include xs {
+				width: 50px;
+				height: 50px;
+			}
+		}
+
 		&--vk {
-			margin-right: 18px;
 			background: url("../img/icons/vk.svg") no-repeat 50% 50%;
+			background-size: 100%;
 		}
 
 		&--inst {
-			margin-right: 18px;
 			background: url("../img/icons/instagram.svg") no-repeat 50% 50%;
+			background-size: 100%;
 		}
 
 		&--fb {
 			background: url("../img/icons/fb.svg") no-repeat 50% 50%;
+			background-size: 100%;
 		}
 
 		&:hover {
