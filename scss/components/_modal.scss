@@ -31,15 +31,28 @@
 		box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.8);
 		cursor: default;
 		text-align: left;
+
+		@include md {
+			width: 80%;
+			margin: 25px auto;
+		}
 	}
 
 	&__content {
 		display: flex;
 		overflow: hidden;
+
+		@include xs {
+			flex-direction: column;
+		}
 	}
 
 	&__img {
 		width: 400px;
+
+		@include xs {
+			width: 100%;
+		}
 	}
 }
 
@@ -51,11 +64,25 @@
 	padding: 118px 48px;
 	color: var(--color-dark);
 
+	@include md {
+		width: 55%;
+		padding: 5% 5%;
+	}
+
+	@include xs {
+		width: 100%;
+	}
+
 	&__subtitle {
 		display: inline-block;
 		font-weight: 600;
 		font-size: 24px;
 		line-height: 33px;
+
+		@include xs {
+			font-size: 18px;
+			line-height: 18px;
+		}
 	}
 
 	&__name {
@@ -72,6 +99,10 @@
 		font-size: 12px;
 		line-height: 16px;
 		color: #969696;
+
+		@include xs {
+			margin-bottom: 15px;
+		}
 	}
 
 	&__desc {
@@ -79,6 +110,11 @@
 		font-weight: normal;
 		font-size: 16px;
 		line-height: 32px;
+
+		@include xs {
+			font-size: 12px;
+			line-height: 18px;
+		}
 	}
 }
 
