@@ -97,6 +97,10 @@
 		visibility: hidden;
 		transition: opacity var(--transition-time), visibility var(--transition-time);
 
+		@include lg {
+			transform: translateX(-95%);
+		}
+
 		&::after {
 			content: '';
 			position: absolute;
@@ -108,6 +112,11 @@
 			border-width: 9px 7px 0 7px;
 			border-color: var(--color-silver) transparent transparent transparent;
 			transform: translateX(-50%);
+
+			@include lg {
+				left: 100%;
+				transform: translateX(-100%);
+			}
 		}
 	}
 }

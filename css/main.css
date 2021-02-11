@@ -3827,6 +3827,13 @@ body {
   transition: opacity var(--transition-time), visibility var(--transition-time);
 }
 
+@media (max-width: 1366px) {
+  .tooltip__popup {
+    -webkit-transform: translateX(-95%);
+            transform: translateX(-95%);
+  }
+}
+
 .tooltip__popup::after {
   content: '';
   position: absolute;
@@ -3839,6 +3846,14 @@ body {
   border-color: var(--color-silver) transparent transparent transparent;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+@media (max-width: 1366px) {
+  .tooltip__popup::after {
+    left: 100%;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
 }
 
 .tooltip__marker:hover + .tooltip__popup,
