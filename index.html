@@ -24,25 +24,25 @@
 					<nav class="header__nav nav-top">
 						<ul class="nav-top__list">
 							<li class="nav-top__item">
-								<a href="#" class="nav-top__link">О нас</a>
+								<a href="about-us" class="nav-top__link">О нас</a>
 							</li>
 							<li class="nav-top__item">
-								<a href="#" class="nav-top__link">Галерея</a>
+								<a href="gallery" class="nav-top__link">Галерея</a>
 							</li>
 							<li class="nav-top__item">
-								<a href="#" class="nav-top__link">Каталог</a>
+								<a href="catalog" class="nav-top__link">Каталог</a>
 							</li>
 							<li class="nav-top__item">
-								<a href="#" class="nav-top__link">События</a>
+								<a href="events" class="nav-top__link">События</a>
 							</li>
 							<li class="nav-top__item">
-								<a href="#" class="nav-top__link">Издания</a>
+								<a href="publications" class="nav-top__link">Издания</a>
 							</li>
 							<li class="nav-top__item">
-								<a href="#" class="nav-top__link">Проекты</a>
+								<a href="projects" class="nav-top__link">Проекты</a>
 							</li>
 							<li class="nav-top__item">
-								<a href="#" class="nav-top__link">Контакты</a>
+								<a href="contacts" class="nav-top__link">Контакты</a>
 							</li>
 						</ul>
 					</nav>
@@ -3280,16 +3280,16 @@
 					<span class="contacts__room-name">Шоурум №4</span>
 					<address class="contacts__address">Леонтьевский переулок, дом 5, строение 1</address>
 
-					<form class="contacts__form contacts-form">
+					<form action="./php/mail.php" method="POST" class="contacts__form contacts-form">
 						<span class="contacts-form__text">Заказать обратный звонок</span>
 
 						<label class="contacts-form__label">
-							<input class="contacts-form__input contacts-form__input--text" type="text" placeholder="Имя*" data-validate-field="name">
+							<input class="contacts-form__input contacts-form__input--text" name="name" type="text" placeholder="Имя*" data-validate-field="name">
 						</label>
 						<label class="contacts-form__label">
-							<input class="contacts-form__input contacts-form__input--tel" type="tel" placeholder="Телефон*" data-validate-field="tel">
+							<input class="contacts-form__input contacts-form__input--tel" name="phone" type="tel" placeholder="Телефон*" data-validate-field="tel">
 						</label>
-						<button type="submit" class="contacts-form__btn btn--reset">Заказать</button>
+						<button type="submit" name="submit" class="contacts-form__btn btn--reset">Заказать</button>
 					</form>
 
 					<div class="contacts__socials contacts-socials">
@@ -3352,14 +3352,15 @@
 			</div>
 		</footer>
 		<script src="js/burger.js"></script>
+		<script src="js/jquery-3.5.1.min.js"></script>
 		<script src="js/simplebar.min.js"></script>
 		<script src="js/focus-visible.js"></script>
+		<script src="js/scroll.js"></script>
 		<script src="js/popup.js"></script>
 		<script src="js/swiper-bundle.min.js"></script>
 		<script src="js/swiper.js"></script>
 		<script src="js/choices.min.js"></script>
 		<script src="js/modal.js"></script>
-		<script src="js/jquery-1.12.4.js"></script>
 		<script src="js/jquery-ui.js"></script>
 		<script src="js/catalog.js"></script>
 		<script src="js/publications.js"></script>
