@@ -561,8 +561,10 @@ body {
 
 @media (max-width: 1024px) {
   .header-top__logo {
-    width: 190px;
-    height: 42px;
+    width: 187px;
+    height: 41px;
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
@@ -573,6 +575,8 @@ body {
   .header-top__logo {
     width: 97px;
     height: 22px;
+    -webkit-transform: translateX(-2px);
+            transform: translateX(-2px);
   }
 }
 
@@ -3138,7 +3142,7 @@ body {
 @media (max-width: 680px) {
   .publications__container {
     padding-top: 51px;
-    padding-bottom: 0;
+    padding-bottom: 50px;
   }
 }
 
@@ -4401,7 +4405,7 @@ body {
 
 @media (max-width: 680px) {
   .footer {
-    padding: 20px 0 10px;
+    padding: 20px 0;
   }
 }
 
@@ -4429,12 +4433,13 @@ body {
 @media (max-width: 680px) {
   .footer__logo {
     width: 97px;
+    height: 22px;
   }
 }
 
 @media (max-width: 680px) {
   .footer-socials {
-    margin-bottom: 8px;
+    margin-bottom: 17px;
   }
 }
 

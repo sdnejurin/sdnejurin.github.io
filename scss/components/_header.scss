@@ -53,14 +53,16 @@ body {
 
 	&__logo {
 		@include md {
-			width: 190px;
-			height: 42px;
+			width: 187px;
+			height: 41px;
+			transform: translateX(-5px);
 			order: 2;
 		}
 
 		@include xs {
 			width: 97px;
 			height: 22px;
+			transform: translateX(-2px);
 		}
 	}
 }
