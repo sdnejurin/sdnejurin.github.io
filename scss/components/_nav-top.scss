@@ -1,24 +1,35 @@
 .nav-top {
+	display: flex;
+	justify-content: space-between;
+	width: 78%;
 	font-weight: 600;
 	font-size: 18px;
 	line-height: 25px;
 	color: var(--color-white);
 
 	@include md {
-		display: block;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: space-between;
 		position: absolute;
 		top: 0;
 		bottom: 0;
 		left: 0;
 		height: 100vh;
 		width: 100vw;
-		font-size: 5vh;
+		padding: 95px 50px 50px;
+		font-size: 24px;
 		line-height: normal;
-		background-color: rgba(0, 0, 0, 0.25);
-		backdrop-filter: blur(15px);
+		background-color: rgba(0, 0, 0, 0.8);
 		transform: none;
 		transition: transform var(--transition-time);
 		transform: translateX(-101%);
+	}
+
+	@include xs {
+		font-size: 16px;
+		padding: 50px 25px 40px;
 	}
 
 	&__list {
@@ -26,10 +37,14 @@
 
 		@include md {
 			flex-direction: column;
-			align-items: center;
+			align-items: flex-start;
 			height: 100%;
+			margin-bottom: 40px;
 			justify-content: space-between;
-			padding: 25px 0;
+		}
+
+		@include xs {
+			margin-bottom: 20px;
 		}
 	}
 
@@ -67,4 +82,55 @@
 
 .nav-top--active {
 	transform: none;
+}
+
+.login-btn {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	padding-left: 20px;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 25px;
+	color: var(--color-white);
+	outline: 2px solid transparent;
+	transition: color var(--transition-time), outline var(--transition-time);
+
+	@include md {
+		padding: 10px 88px;
+		border: 2px solid var(--color-amethyst);
+		border-radius: 100px;
+	}
+
+	@include xs {
+		padding: 10px 32px;
+	}
+
+	&:hover {
+		color: var(--color-heliotrope);
+	}
+
+	&:focus-visible {
+		outline: 2px solid var(--color-purple);
+	}
+
+	&:active {
+		color: var(--color-amethyst);
+	}
+
+	&__svg {
+		width: 13px;
+		height: 13px;
+		margin-right: 6px;
+		fill: var(--color-white);
+		transition: fill var(--transition-time);
+	}
+}
+
+.login-btn:hover > .login-btn__svg {
+	fill: var(--color-heliotrope);
+}
+
+.login-btn:active > .login-btn__svg {
+	fill: var(--color-amethyst);
 }

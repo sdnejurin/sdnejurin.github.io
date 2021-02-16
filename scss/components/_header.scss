@@ -67,51 +67,6 @@ body {
 	}
 }
 
-.login-btn {
-	position: relative;
-	padding-left: 20px;
-	font-weight: normal;
-	font-size: 18px;
-	line-height: 25px;
-	color: var(--color-white);
-	outline: 2px solid transparent;
-	transition: color var(--transition-time), outline var(--transition-time);
-
-	@include md {
-		display: none;
-	}
-
-	&:hover {
-		color: var(--color-heliotrope);
-	}
-
-	&:focus-visible {
-		outline: 2px solid var(--color-purple);
-	}
-
-	&:active {
-		color: var(--color-amethyst);
-	}
-
-	&__svg {
-		position: absolute;
-		top: 25%;
-		left: 0;
-		width: 13px;
-		height: 13px;
-		fill: var(--color-white);
-		transition: fill var(--transition-time);
-	}
-}
-
-.login-btn:hover > .login-btn__svg {
-	fill: var(--color-heliotrope);
-}
-
-.login-btn:active > .login-btn__svg {
-	fill: var(--color-amethyst);
-}
-
 .search-btn {
 	display: none;
 	width: 30px;
