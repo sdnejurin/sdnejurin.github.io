@@ -1,0 +1,284 @@
+.gallery {
+	padding-top: 81px;
+	padding-bottom: 74px;
+	background: url("../img/gallery.jpg") no-repeat 50%;
+	background-size: cover;
+	color: var(--color-white);
+
+	@include sm {
+		padding-bottom: 70px;
+	}
+
+	@include xs {
+		padding-top: 51px;
+	}
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		height: 840px;
+
+		@include lg {
+			height: 684px;
+		}
+
+		@include sm {
+			height: 100%;
+		}
+	}
+
+	&__form {
+		margin-bottom: auto;
+	}
+
+	&__subtitle {
+		margin-bottom: 15px;
+
+		@include xs {
+			margin-bottom: 11px;
+		}
+	}
+
+	&__picture {
+		display: inline-block;
+		position: relative;
+		outline: 2px solid transparent;
+		width: 100%;
+		height: 350px;
+		cursor: pointer;
+		transition: outline-color var(--transition-time);
+
+		@include lg {
+			max-width: 317px;
+			height: 280px;
+		}
+
+		@include xs {
+			height: 367px;
+		}
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 7.5%;
+			left: 7.5%;
+			right: 7.5%;
+			width: 86%;
+			height: 86%;
+			background: url("../img/icons/loupe.svg") no-repeat 50%;
+			background-color: rgba(0, 0, 0, 0.5);
+			opacity: 0;
+			transition: opacity var(--transition-time);
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(194, 131, 243, 0.4);
+			opacity: 0;
+			transition: opacity var(--transition-time);
+		}
+
+		&:hover {
+			&::before {
+				opacity: 1;
+			}
+		}
+
+		&:active {
+			&::after {
+				opacity: 1;
+			}
+		}
+
+		&:focus-visible {
+			outline-color: var(--color-purple);
+		}
+	}
+
+	&__img {
+		width: 100%;
+		height: 100%;
+	}
+
+	&__description {
+		display: none;
+	}
+}
+
+.gallery-text {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 32px;
+
+	&__link {
+		color: var(--color-amethyst);
+		border-bottom: 1px solid transparent;
+		outline: 2px solid transparent;
+		transition: border-color var(--transition-time), color var(--transition-time), outline var(--transition-time);
+
+		&:hover {
+			border-color: var(--color-amethyst);
+		}
+
+		&:active {
+			color: var(--color-purple);
+			border-color: var(--color-purple);
+		}
+
+		&:focus-visible {
+			outline: 2px solid var(--color-purple);
+		}
+	}
+}
+
+.gallery-left-column {
+	display: flex;
+	flex-direction: column;
+	width: 25%;
+	margin-bottom: auto;
+	margin-right: 46px;
+	order: 1;
+
+	@include md {
+		width: 30.3%;
+	}
+
+	@include sm {
+		width: 41.9%;
+		margin-bottom: 85px;
+	}
+
+	@include xs {
+		width: 100%;
+		margin-bottom: 97px;
+	}
+}
+
+.gallery-right-column {
+	width: 72.2%;
+	padding-top: 22px;
+	order: 3;
+
+	@include lg-max {
+		width: 70%;
+	}
+
+	@include md {
+		width: 64.5%;
+	}
+
+	@include sm {
+		width: 100%;
+		margin-bottom: 24px;
+		order: 2;
+	}
+
+	@include xs {
+		margin-bottom: 0px;
+	}
+
+	&__nav {
+		margin-bottom: 32px;
+
+		@include xs {
+			margin-top: 17px;
+			margin-bottom: 20px;
+			order: 2;
+		}
+	}
+}
+
+.gallery-bottom-left-column {
+	width: 25%;
+	order: 2;
+
+	@include md {
+		width: 30.3%;
+	}
+
+	@include sm {
+		width: 100%;
+		order: 3;
+	}
+}
+
+.swiper-nav {
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 130px;
+
+	&__btn {
+		position: relative;
+		right: 0;
+		left: 0;
+		width: 30px;
+		height: 30px;
+		margin: 0;
+		border-radius: 100%;
+		border: 2px solid transparent;
+		outline: 2px solid transparent;
+		background-color: #666;
+		transition: background-color var(--transition-time), border-color var(--transition-time), outline-color var(--transition-time);
+
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			right: 0;
+			left: 0;
+			bottom: 0;
+		}
+
+		&:hover {
+			background-color: var(--color-amethyst);
+		}
+
+		&:active {
+			background-color: var(--color-purple);
+			border-color: var(--color-biloba);
+		}
+
+		&--prev {
+			transform: rotate(90deg);
+		}
+
+		&--next {
+			transform: rotate(-90deg);
+		}
+	}
+
+	&__svg {
+		width: 13px;
+		height: 13px;
+	}
+}
+
+.swiper-nav .focus-visible {
+	outline: 2px solid var(--color-purple);
+}
+
+.swiper-container-gallery {
+	padding-left: 2px;
+	padding-right: 2px;
+
+	@include xs {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.swiper-pagination {
+	position: static;
+}
+
+.swiper-button-disabled {
+	opacity: 1 !important;
+}

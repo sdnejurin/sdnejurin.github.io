@@ -1,0 +1,105 @@
+.burger-btn {
+	position: relative;
+	display: none;
+	width: 39px;
+	height: 39px;
+	color: var(--color-white);
+	outline: 2px solid transparent;
+	transition: color var(--transition-time), outline-color var(--transition-time), transform var(--transition-time);
+
+	@include md {
+		display: inline-block;
+		order: 1;
+	}
+
+	@include xs {
+		width: 21px;
+		height: 23px;
+	}
+
+	&--active {
+		color: var(--color-heliotrope);
+		transition: transform var(--transition-time);
+	}
+
+	&--search-active {
+		display: none;
+	}
+
+	&:hover {
+		color: var(--color-heliotrope);
+	}
+
+	&:focus-visible {
+		outline-color: var(--color-purple);
+	}
+
+	&:active {
+		color: var(--color-amethyst);
+	}
+
+	&__line {
+		display: block;
+		width: 70%;
+		height: 4px;
+		background-color: currentColor;
+		transition: transform var(--transition-time);
+
+		@include xs {
+			height: 2px;
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 15%;
+			left: 0;
+			width: 90%;
+			height: 4px;
+			background-color: currentColor;
+			transition: transform var(--transition-time);
+
+			@include xs {
+				height: 2px;
+			}
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 14%;
+			left: 0;
+			width: 60%;
+			height: 4px;
+			background-color: currentColor;
+			transition: transform var(--transition-time);
+
+			@include xs {
+				height: 2px;
+			}
+		}
+	}
+}
+
+.burger-btn--active .burger-btn__line::before {
+	width: 100%;
+	transform: translateY(12px) rotate(45deg);
+
+	@include xs {
+		transform: translateY(7.5px) rotate(45deg);
+	}
+}
+
+.burger-btn--active .burger-btn__line::after {
+	width: 100%;
+	transform: translateY(-12px) rotate(-45deg);
+
+	@include xs {
+		transform: translateY(-7.5px) rotate(-45deg);
+	}
+}
+
+.burger-btn--active .burger-btn__line {
+	width: 0;
+	transition: none;
+}
