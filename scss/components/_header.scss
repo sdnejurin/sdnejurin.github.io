@@ -20,6 +20,7 @@ body {
 	}
 
 	&__container {
+		position: relative;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -27,6 +28,10 @@ body {
 		@include xs {
 			padding-top: 11px;
 			padding-bottom: 11px;
+		}
+
+		&--search-active {
+			display: block;
 		}
 	}
 }
@@ -46,23 +51,85 @@ body {
 	padding: 30px 0 30px;
 	background-color: var(--color-black);
 
+	@include sm {
+		height: 100%;
+	}
+
 	@include xs {
 		padding: 0;
-		height: 100%;
 	}
 
 	&__logo {
 		@include md {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translateX(-50%);
 			width: 187px;
 			height: 41px;
-			transform: translateX(-5px);
 			order: 2;
 		}
 
 		@include xs {
+			position: static;
+			transform: translateX(0);
 			width: 97px;
 			height: 22px;
-			transform: translateX(-2px);
+		}
+
+		&--search-active {
+			display: none;
+		}
+	}
+
+	&__wrapper {
+		display: flex;
+		width: 0;
+		overflow: hidden;
+		transition: width var(--transition-time);
+
+		&--active {
+			width: 190px;
+			margin-left: 10px;
+
+			@include sm {
+				width: 100%;
+			}
+		}
+	}
+
+	&__search {
+		display: none;
+
+		@include md {
+			display: flex;
+			align-items: center;
+			order: 3;
+		}
+	}
+
+	&__input {
+		width: 190px;
+		padding: 2px 0 1px;
+		font-size: 18px;
+		line-height: 25px;
+		color: rgba(255, 255, 255, 0.85);
+		background-color: transparent;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.85);
+		transition: border-color var(--transition-time);
+
+		@include sm {
+			display: inline-block;
+			width: 100%;
+		}
+
+		&::placeholder {
+			color: rgba(255, 255, 255, 0.85);
+		}
+
+		&:focus {
+			outline: none;
+			color: var(--color-heliotrope);
 		}
 	}
 }
@@ -74,6 +141,42 @@ body {
 	fill: var(--color-white);
 	outline: 2px solid transparent;
 	transition: fill var(--transition-time), outline-color var(--transition-time);
+
+	@include md {
+		display: block;
+	}
+
+	@include xs {
+		width: 17px;
+		height: 17px;
+		padding: 0;
+	}
+
+	&:hover {
+		fill: var(--color-heliotrope);
+	}
+
+	&:focus-visible {
+		outline-color: var(--color-purple);
+	}
+
+	&:active {
+		fill: var(--color-amethyst);
+	}
+}
+
+.search-btn-close {
+	display: none;
+	width: 30px;
+	height: 30px;
+	margin-left: 10px;
+	fill: var(--color-white);
+	outline: 2px solid transparent;
+	transition: fill var(--transition-time), outline-color var(--transition-time);
+
+	@include sm {
+		display: block;
+	}
 
 	@include xs {
 		width: 17px;
@@ -93,10 +196,6 @@ body {
 		fill: var(--color-amethyst);
 	}
 
-	@include md {
-		display: block;
-		order: 3;
-	}
 }
 
 .header-bottom {

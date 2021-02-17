@@ -57,11 +57,24 @@
 						<span class="burger-btn__line"></span>
 					</button>
 
-					<button class="search-btn btn--reset">
-						<svg class="search-btn__svg">
-							<use xlink:href="img/sprite.svg#search"></use>
-						</svg>
-					</button>
+					<div class="header-top__search">
+						<button class="search-btn btn--reset">
+							<svg class="search-btn__svg">
+								<use xlink:href="img/sprite.svg#search"></use>
+							</svg>
+						</button>
+
+						<div class="header-top__wrapper">
+							<input class="header-top__input" type="search" name="search">
+
+							<button class="search-btn-close btn--reset">
+								<svg class="search-btn-close__svg">
+									<use xlink:href="img/sprite.svg#close-search"></use>
+								</svg>
+							</button>
+						</div>
+
+					</div>
 				</div>
 			</div>
 
@@ -3362,6 +3375,7 @@
 			</div>
 		</footer>
 		<script src="js/burger.js"></script>
+		<script src="js/search.js"></script>
 		<script src="js/jquery-3.5.1.min.js"></script>
 		<script src="js/simplebar.min.js"></script>
 		<script src="js/focus-visible.js"></script>

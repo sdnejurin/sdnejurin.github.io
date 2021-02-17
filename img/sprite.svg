@@ -69,5 +69,12 @@
 		</g>
 	</symbol>
 
+	<symbol viewBox="0 0 29 29" id="close-search">
+		<g>
+			<rect width="37.2801" height="3.72801" transform="matrix(0.707093 0.707121 -0.707093 0.707121 2.63867 7.62939e-06)"/>
+			<rect width="37.2801" height="3.72801" transform="matrix(0.707093 -0.707121 0.707093 0.707121 -0.000976562 26.3615)"/>
+		</g>
+	</symbol>
+
 </svg>
 

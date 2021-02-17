@@ -7,6 +7,11 @@
 	outline: 2px solid transparent;
 	transition: color var(--transition-time), outline-color var(--transition-time), transform var(--transition-time);
 
+	@include md {
+		display: inline-block;
+		order: 1;
+	}
+
 	@include xs {
 		width: 21px;
 		height: 23px;
@@ -15,6 +20,10 @@
 	&--active {
 		color: var(--color-heliotrope);
 		transition: transform var(--transition-time);
+	}
+
+	&--search-active {
+		display: none;
 	}
 
 	&:hover {
@@ -27,11 +36,6 @@
 
 	&:active {
 		color: var(--color-amethyst);
-	}
-
-	@include md {
-		display: inline-block;
-		order: 1;
 	}
 
 	&__line {
