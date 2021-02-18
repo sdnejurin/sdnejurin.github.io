@@ -71,8 +71,8 @@ body {
 		}
 
 		@include xs {
-			position: static;
-			transform: translateX(0);
+			top: 50%;
+			transform: translate(-50%, -50%);
 			width: 97px;
 			height: 22px;
 		}
@@ -84,6 +84,7 @@ body {
 
 	&__wrapper {
 		display: flex;
+		align-items: center;
 		width: 0;
 		overflow: hidden;
 		transition: width var(--transition-time);
@@ -109,7 +110,7 @@ body {
 	}
 
 	&__input {
-		width: 190px;
+		width: 100%;
 		padding: 2px 0 1px;
 		font-size: 18px;
 		line-height: 25px;
@@ -119,8 +120,7 @@ body {
 		transition: border-color var(--transition-time);
 
 		@include sm {
-			display: inline-block;
-			width: 100%;
+			margin-right: 10px;
 		}
 
 		&::placeholder {
@@ -169,7 +169,6 @@ body {
 	display: none;
 	width: 30px;
 	height: 30px;
-	margin-left: 10px;
 	fill: var(--color-white);
 	outline: 2px solid transparent;
 	transition: fill var(--transition-time), outline-color var(--transition-time);

@@ -586,9 +586,9 @@ body {
 
 @media (max-width: 680px) {
   .header-top__logo {
-    position: static;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     width: 97px;
     height: 22px;
   }
@@ -602,6 +602,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 0;
   overflow: hidden;
   -webkit-transition: width var(--transition-time);
@@ -638,7 +641,7 @@ body {
 }
 
 .header-top__input {
-  width: 190px;
+  width: 100%;
   padding: 2px 0 1px;
   font-size: 18px;
   line-height: 25px;
@@ -651,8 +654,7 @@ body {
 
 @media (max-width: 992px) {
   .header-top__input {
-    display: inline-block;
-    width: 100%;
+    margin-right: 10px;
   }
 }
 
@@ -717,7 +719,6 @@ body {
   display: none;
   width: 30px;
   height: 30px;
-  margin-left: 10px;
   fill: var(--color-white);
   outline: 2px solid transparent;
   -webkit-transition: fill var(--transition-time), outline-color var(--transition-time);

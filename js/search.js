@@ -18,9 +18,11 @@ document.addEventListener('DOMContentLoaded', () => {
 			});
 			searchBtnClose.addEventListener('click', (e) => {
 				searchWrapper.classList.remove('header-top__wrapper--active');
-				containerSearchActive.classList.remove('header__container--search-active');
-				burgerBtn.classList.remove('burger-btn--search-active');
-				headerLogo.classList.remove('header-top__logo--search-active');
+				setTimeout(() => {
+					containerSearchActive.classList.remove('header__container--search-active');
+					burgerBtn.classList.remove('burger-btn--search-active');
+					headerLogo.classList.remove('header-top__logo--search-active');
+				}, 300);
 			});
 		};
 
