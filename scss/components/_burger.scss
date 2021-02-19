@@ -60,6 +60,7 @@
 			transition: transform var(--transition-time);
 
 			@include xs {
+				top: 16%;
 				height: 2px;
 			}
 		}
