@@ -4865,8 +4865,8 @@ body {
 
 @media (max-width: 680px) {
   .burger-btn--active .burger-btn__line::after {
-    -webkit-transform: translateY(-7.5px) rotate(-45deg);
-            transform: translateY(-7.5px) rotate(-45deg);
+    -webkit-transform: translateY(-7px) rotate(-45deg);
+            transform: translateY(-7px) rotate(-45deg);
   }
 }
 
