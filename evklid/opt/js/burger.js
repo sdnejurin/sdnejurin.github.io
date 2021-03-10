@@ -1,0 +1,1 @@
+document.querySelector("#burger").addEventListener("click",function(){const e=document.querySelector("#menu"),t=document.querySelector("#burger");e.classList.toggle("menu--active"),t.classList.toggle("burger--active")});
