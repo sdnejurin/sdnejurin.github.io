@@ -1,0 +1,84 @@
+.header {
+  font-family: "TTFirsNeue", sans-serif; }
+  .header__logo {
+    grid-column: 1 / 3; }
+
+.header-top {
+  padding: 10px 0 8px;
+  background-color: var(--color-mine-shaft); }
+  .header-top__container {
+    align-items: center; }
+
+.nav {
+  grid-column: 4 / 11; }
+  .nav__list {
+    display: flex;
+    justify-content: space-between; }
+
+.socials {
+  justify-self: end;
+  grid-column: 11 / 13; }
+  .socials__list {
+    display: grid;
+    grid-template-columns: repeat(3, 30px);
+    grid-template-rows: repeat(1, 30px);
+    gap: 0 20px; }
+  .socials__svg {
+    width: 100%;
+    height: 100%; }
+
+.header-bottom {
+  padding: 12px 0;
+  background-color: var(--color-tundora); }
+  .header-bottom__container {
+    align-items: center; }
+
+.telephone {
+  grid-column: 1 / 3; }
+  .telephone__link {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 17px 1fr;
+    grid-template-rows: repeat(1, 21px);
+    gap: 0; }
+  .telephone__svg {
+    width: 100%;
+    height: 100%; }
+  .telephone__number {
+    font-weight: 700; }
+
+.search-form {
+  grid-column: 11 / 13; }
+  .search-form__wrapper {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 21px 1fr;
+    grid-template-rows: repeat(1, 21px); }
+  .search-form__input {
+    display: grid;
+    border: 0;
+    border-bottom: 1px solid var(--color-mercury);
+    font-size: 14px;
+    color: var(--color-mercury);
+    background-color: inherit; }
+    .search-form__input::-moz-placeholder {
+      color: var(--color-mercury); }
+    .search-form__input:-ms-input-placeholder {
+      color: var(--color-mercury); }
+    .search-form__input::placeholder {
+      color: var(--color-mercury); }
+    .search-form__input:focus {
+      outline: none; }
+  .search-form__btn {
+    position: relative;
+    order: -1;
+    width: 100%;
+    height: 100%; }
+  .search-form__svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 17px;
+    height: 21px; }
+
+/*# sourceMappingURL=main.css.map */
